@@ -1,9 +1,9 @@
 import UIKit
 
-struct WelcomeComponent {
+public struct WelcomeComponent {
     let parent: RootComponent
     
-    func makeWelcomeScene(setViewComtroller: @escaping (UIViewController) -> Void) {
+    public func makeWelcomeScene(setViewComtroller: @escaping (UIViewController) -> Void) {
         WelcomeScene.start(
             setViewComtroller: setViewComtroller,
             makeLoginScene: makeLoginScene,
