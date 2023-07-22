@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "combinecocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CombineCommunity/CombineCocoa.git",
+      "state" : {
+        "revision" : "7300c75ff9e072aa7fd0fccefcc88f74aae9bf56",
+        "version" : "0.4.1"
+      }
+    },
+    {
+      "identity" : "moonkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mooncascade/MoonKit.git",
+      "state" : {
+        "revision" : "90220ead5012605425afe9fb425d5abe53ad8ad3",
+        "version" : "0.2.1"
+      }
+    }
+  ],
+  "version" : 2
+}
