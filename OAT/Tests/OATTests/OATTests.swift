@@ -2,10 +2,22 @@ import XCTest
 @testable import OAT
 
 final class OATTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(OAT().text, "Hello, World!")
+    func testExample_negative() throws {
+        let checker = UIButtonOAT()
+        let button = UIButton()
+        let result = checker.test(button)
+        
+        XCTAssertFalse(result)
+    }
+
+    func testExample_positive() throws {
+        let checker = UIButtonOAT()
+        
+        let button = UIButton()
+        button.accessibilityLabel = "Asdf"
+        
+        let result = checker.test(button)
+        
+        XCTAssertTrue(result)
     }
 }

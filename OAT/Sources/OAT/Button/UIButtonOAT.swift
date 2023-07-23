@@ -2,6 +2,7 @@ import XCTest
 import UIKit
 
 private let checker = UIButtonOAT()
+private let imageViewChecker = UIImageViewOAT()
 
 public extension UIView {
     func check() {
@@ -11,6 +12,34 @@ public extension UIView {
 
 public func checkAccessibility(
     _ view: UIView,
+    file: StaticString = #file,
+    testName: String = #function,
+    line: UInt = #line
+) {
+    if let control = view as? UIControl {
+        checkUIControl(control, file: file, testName: testName, line: line)
+    } else if let imageView = view as? UIImageView {
+        checkUIImageView(imageView, file: file, testName: testName, line: line)
+    }
+}
+
+func checkUIImageView(
+    _ imageView: UIImageView,
+    file: StaticString = #file,
+    testName: String = #function,
+    line: UInt = #line
+) {
+    switch imageViewChecker.check(imageView) {
+        case .success:
+            break
+
+        case .failure(let error):
+                XCTFail(error.errorMessage, file: file, line: line)
+    }
+}
+
+func checkUIControl(
+    _ view: UIControl,
     file: StaticString = #file,
     testName: String = #function,
     line: UInt = #line
@@ -73,4 +102,3 @@ class UIButtonOAT {
         }
     }
 }
-

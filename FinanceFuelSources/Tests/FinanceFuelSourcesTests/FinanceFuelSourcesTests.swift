@@ -7,4 +7,10 @@ final class FinanceFuelSourcesTests: XCTestCase {
         let button = AccessibleButton(title: "Ok", color: .mainColor, titleColor: .blue)
         checkAccessibility(button)
     }
+    
+    func testImageView() throws {
+        let image = UIImageView()
+        image.isAccessibilityElement = true
+        checkAccessibility(image)
+    }
 }
