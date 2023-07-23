@@ -14,7 +14,9 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/mooncascade/MoonKit.git", from: "0.2.1"),
-        .package(url: "https://github.com/CombineCommunity/CombineCocoa.git", from: "0.4.1")
+        .package(url: "https://github.com/CombineCommunity/CombineCocoa.git", from: "0.4.1"),
+        .package(path: "./OAT"),
+        
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
@@ -31,6 +33,6 @@ let package = Package(
         ),
         .testTarget(
             name: "FinanceFuelSourcesTests",
-            dependencies: ["FinanceFuelSources"]),
+            dependencies: ["FinanceFuelSources", "OAT"]),
     ]
 )

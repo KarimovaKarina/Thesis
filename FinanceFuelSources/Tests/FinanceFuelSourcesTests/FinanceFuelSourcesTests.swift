@@ -1,11 +1,10 @@
 import XCTest
 @testable import FinanceFuelSources
+import OAT
 
 final class FinanceFuelSourcesTests: XCTestCase {
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(FinanceFuelSources().text, "Hello, World!")
+        let button = AccessibleButton(title: "Ok.", color: .mainColor, titleColor: .blue)
+        checkAccessibility(button)
     }
 }

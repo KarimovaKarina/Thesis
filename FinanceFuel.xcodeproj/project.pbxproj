@@ -153,6 +153,8 @@
 				6E6C53802A6C683300FA4A5F /* PBXTargetDependency */,
 			);
 			name = FinanceFuelTests;
+			packageProductDependencies = (
+			);
 			productName = FinanceFuelTests;
 			productReference = 6E6C537B2A6C683300FA4A5F /* FinanceFuelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
