@@ -1,4 +1,4 @@
-enum AccessibilityLabelError: Error {
+enum AccessibilityLabelError {
     case labelIsMissing
     case labelIsEmpty
     case containsType([String])
@@ -6,7 +6,7 @@ enum AccessibilityLabelError: Error {
     case endsWithPeriod
 }
 
-extension AccessibilityLabelError {
+extension AccessibilityLabelError: AccessibilityError {
     var errorMessage: String {
         switch self {
         case .labelIsMissing:

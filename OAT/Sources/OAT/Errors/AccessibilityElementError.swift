@@ -2,7 +2,7 @@ enum AccessibilityElementError: Error {
     case isNotAccessibilityElement
 }
 
-extension AccessibilityElementError {
+extension AccessibilityElementError: AccessibilityError {
     var errorMessage: String {
         switch self {
         case .isNotAccessibilityElement:

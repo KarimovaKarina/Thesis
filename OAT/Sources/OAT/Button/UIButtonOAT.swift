@@ -29,12 +29,8 @@ func checkUIImageView(
     testName: String = #function,
     line: UInt = #line
 ) {
-    switch imageViewChecker.check(imageView) {
-        case .success:
-            break
-
-        case .failure(let error):
-                XCTFail(error.errorMessage, file: file, line: line)
+    imageViewChecker.check(imageView).forEach { error in
+        XCTFail(error.errorMessage, file: file, line: line)
     }
 }
 
@@ -45,60 +41,30 @@ func checkUIControl(
     line: UInt = #line
 ) {
     if let button = view as? UIButton {
-        switch checker.check(button) {
-        case .success:
-            break
-
-        case .failure(let error):
+        checker.check(button).forEach { error in
             XCTFail(error.errorMessage, file: file, line: line)
         }
     }
 }
 
 class UIButtonOAT {
-    func check(_ button: UIButton) -> Result<Void, AccessibilityLabelError> {
+    func check(_ button: UIButton) -> [any AccessibilityError] {
+        var errors: [AccessibilityError] = []
         let defaultAccessibilityLabel = button.currentTitle
         let actualAccessibilityLabel = button.accessibilityLabel
         
         if actualAccessibilityLabel == nil, defaultAccessibilityLabel == nil {
-            return .failure(.labelIsMissing)
+           errors.append(AccessibilityLabelError.labelIsMissing)
         } else if let actualAccessibilityLabel {
-            return check(actualAccessibilityLabel)
+            errors.append(contentsOf: button.checkAccessiblityLabel(actualAccessibilityLabel))
         } else if let defaultAccessibilityLabel {
-            return check(defaultAccessibilityLabel)
+            errors.append(contentsOf: button.checkAccessiblityLabel(defaultAccessibilityLabel))
         }
 
-        return .success(())
-    }
-    
-    private func check(_ accessiblityLabel: String) -> Result<Void, AccessibilityLabelError> {
-        guard !accessiblityLabel.isEmpty else {
-            return .failure(.labelIsEmpty)
-        }
-        
-        guard accessiblityLabel.isCapitalized() else {
-            return .failure(.firstWordIsNotCapitalized)
-        }
-        
-        guard !accessiblityLabel.endsWithPeriod() else {
-            return .failure(.endsWithPeriod)
-        }
-       
-        let stopWords = AccessibilityLabelError.stopWords.filter{ accessiblityLabel.contains($0)}
-        if !stopWords.isEmpty {
-            return .failure(.containsType(stopWords))
-        }
-        
-        return .success(())
+        return errors
     }
     
     func test(_ button: UIButton) -> Bool {
-        switch check(button) {
-        case .success:
-            return true
-            
-        case .failure:
-            return false
-        }
+        check(button).isEmpty ? true : false
     }
 }
