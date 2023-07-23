@@ -1,0 +1,3 @@
+enum AccessibilityTraitError {
+    case isMissing
+}

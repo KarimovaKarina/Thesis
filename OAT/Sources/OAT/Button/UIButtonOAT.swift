@@ -47,11 +47,11 @@ class UIButtonOAT {
             return .failure(.labelIsEmpty)
         }
         
-        guard let firstLetter = accessiblityLabel.first, firstLetter.isUppercase else {
+        guard accessiblityLabel.isCapitalized() else {
             return .failure(.firstWordIsNotCapitalized)
         }
         
-        guard let lastCharacter = accessiblityLabel.last, lastCharacter != "." else {
+        guard !accessiblityLabel.endsWithPeriod() else {
             return .failure(.endsWithPeriod)
         }
        
