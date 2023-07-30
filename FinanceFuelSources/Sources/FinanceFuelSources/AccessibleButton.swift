@@ -33,7 +33,6 @@ internal final class AccessibleButton: UIButton {
         titleLabel?.numberOfLines = 0
         titleLabel?.lineBreakMode = .byWordWrapping
         backgroundColor = .black
-        isAccessibilityElement = true
         accessibilityHint = hint
         
         contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)

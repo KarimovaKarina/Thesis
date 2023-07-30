@@ -13,7 +13,7 @@ extension AccessibilityLabelError: AccessibilityError {
             return "accessibilityLabel and its default value by means of element title/text are missing."
             
         case .labelIsEmpty:
-            return "Label is empty string."
+            return "accessibilityLabel should not be empty string."
 
         case let .containsType(stopWords):
             return "accessibilityLabel should not include the type of the control or view. Please, substitute the following words \(stopWords)."
@@ -22,7 +22,7 @@ extension AccessibilityLabelError: AccessibilityError {
             return "accessibilityLabel should begin with a capitalized word. This helps VoiceOver read the label with the appropriate inflection."
             
         case .endsWithPeriod:
-            return "The label is not a sentence and therefore should not end with a period."
+            return "accessibilityLabel is not a sentence and therefore should not end with a period."
         }
     }
 }

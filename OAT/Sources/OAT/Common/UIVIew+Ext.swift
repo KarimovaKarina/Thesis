@@ -22,4 +22,27 @@ extension UIView {
         
         return errors
     }
+    
+    func checkAccessibilityHint(_ accessiblityHint: String) -> [any AccessibilityError] {
+        guard !accessiblityHint.isEmpty else {
+            return [AccessibilityHintError.hintIsEmpty]
+        }
+        
+        var errors: [AccessibilityError] = []
+
+        if !accessiblityHint.isCapitalized() {
+            errors.append(AccessibilityHintError.firstWordIsNotCapitalized)
+        }
+        
+        if !accessiblityHint.endsWithPeriod() {
+            errors.append(AccessibilityHintError.doesNotEndsWithPeriod)
+        }
+       
+        let stopWords = AccessibilityHintError.stopWords.filter{ accessiblityHint.contains($0)}
+        if !stopWords.isEmpty {
+            errors.append(AccessibilityLabelError.containsType(stopWords))
+        }
+        
+        return errors
+    }
 }

@@ -14,7 +14,7 @@ final class OATTests: XCTestCase {
         let checker = UIButtonOAT()
         
         let button = UIButton()
-        button.accessibilityLabel = "Asdf"
+        button.accessibilityLabel = "asdf."
         
         let result = checker.test(button)
         
