@@ -10,13 +10,13 @@ extension AccessibilityHintError: AccessibilityError {
     var errorMessage: String {
         switch self {
         case .hintIsEmpty:
-            return "Hint should not be empty string."
+            return "accessibilityHint should not be empty string."
             
         case let .containsType(stopWords):
-            return "accessibilityLabel should not include the type of the control or view. Please, substitute the following words \(stopWords)."
+            return "accessibilityHint should not include the type of the control or view. Please, substitute the following words \(stopWords)."
             
         case .firstWordIsNotCapitalized:
-            return "accessibilityLabel should begin with a capitalized word. This helps VoiceOver read the hint with the appropriate inflection."
+            return "accessibilityHint should begin with a capitalized word. This helps VoiceOver read the hint with the appropriate inflection."
             
         case .doesNotEndsWithPeriod:
             return "accessibilityHint should end with a period."

@@ -64,6 +64,13 @@ class UIButtonOAT {
         if let hint = button.accessibilityHint {
             errors.append(contentsOf: button.checkAccessibilityHint(hint))
         }
+        
+        if let hint = button.accessibilityHint, let label = button.accessibilityLabel ?? button.currentTitle {
+            if hint.contains(label + " ") {
+                errors.append(AccessibilityHintError.containsLabel)
+            }
+        }
+        
         return errors
     }
     
