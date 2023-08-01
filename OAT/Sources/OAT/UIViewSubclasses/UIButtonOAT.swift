@@ -4,6 +4,10 @@ import UIKit
 private let checker = UIButtonOAT()
 private let imageViewChecker = UIImageViewOAT()
 
+public enum ExcludedChecks {
+    case images
+}
+
 public extension UIView {
     func check() {
         checkAccessibility(self)
@@ -11,13 +15,14 @@ public extension UIView {
 }
 public func checkAccessibility(
     _ view: UIView,
+    exclude: ExcludedChecks? = nil,
     file: StaticString = #file,
     testName: String = #function,
     line: UInt = #line
 ) {
     if let control = view as? UIControl {
         checkUIControl(control, file: file, testName: testName, line: line)
-    } else if let imageView = view as? UIImageView {
+    } else if let imageView = view as? UIImageView, exclude != .images {
         checkUIImageView(imageView, file: file, testName: testName, line: line)
     }
 }
