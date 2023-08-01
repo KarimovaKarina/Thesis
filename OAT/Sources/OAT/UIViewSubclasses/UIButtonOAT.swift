@@ -9,7 +9,6 @@ public extension UIView {
         checkAccessibility(self)
     }
 }
-
 public func checkAccessibility(
     _ view: UIView,
     file: StaticString = #file,

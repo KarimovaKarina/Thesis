@@ -3,8 +3,8 @@ import XCTest
 import OAT
 
 final class FinanceFuelSourcesTests: XCTestCase {
-    func testExample() throws {
-        let button = AccessibleButton(title: "Ok", hint: "Ok Saves your edits.", color: .mainColor, titleColor: .blue)
+    func testExample() throws {        
+        let button = AccessibleButton(title: "Ok", hint: "Saves your edits.", color: .mainColor, titleColor: .blue)
         checkAccessibility(button)
     }
     
