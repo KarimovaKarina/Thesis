@@ -20,34 +20,18 @@ public func checkAccessibility(
     testName: String = #function,
     line: UInt = #line
 ) {
-    if let control = view as? UIControl {
-        checkUIControl(control, file: file, testName: testName, line: line)
-    } else if let imageView = view as? UIImageView, exclude != .images {
-        checkUIImageView(imageView, file: file, testName: testName, line: line)
+    var errors: [AccessibilityError] = []
+    if let textInput = view as? UITextInput {
+        errors = UITextInputOAT().check(textInput)
     }
-}
-
-func checkUIImageView(
-    _ imageView: UIImageView,
-    file: StaticString = #file,
-    testName: String = #function,
-    line: UInt = #line
-) {
-    imageViewChecker.check(imageView).forEach { error in
-        XCTFail(error.errorMessage, file: file, line: line)
-    }
-}
-
-func checkUIControl(
-    _ view: UIControl,
-    file: StaticString = #file,
-    testName: String = #function,
-    line: UInt = #line
-) {
     if let button = view as? UIButton {
-        checker.check(button).forEach { error in
-            XCTFail(error.errorMessage, file: file, line: line)
-        }
+        errors = checker.check(button)
+    } else if let imageView = view as? UIImageView, exclude != .images {
+        errors = imageViewChecker.check(imageView)
+    }
+    
+    errors.forEach { error in
+        XCTFail(error.errorMessage, file: file, line: line)
     }
 }
 

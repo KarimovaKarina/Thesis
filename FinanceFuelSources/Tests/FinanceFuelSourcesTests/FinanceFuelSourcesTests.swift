@@ -14,4 +14,10 @@ final class FinanceFuelSourcesTests: XCTestCase {
         image.accessibilityLabel = "App icon."
         checkAccessibility(image, exclude: .images)
     }
+    
+    func testTextField() throws {
+        let image = UITextView()
+        image.textContentType = .telephoneNumber
+        checkAccessibility(image, exclude: .images)
+    }
 }

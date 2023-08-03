@@ -16,3 +16,16 @@ extension UITextContentType {
         }
     }
 }
+
+extension UIKeyboardType {
+    var title: String {
+        switch self {
+        case .emailAddress:
+            return "`UIKeyboardType.emailAddress`"
+        case .namePhonePad:
+            return "`UIKeyboardType.namePhonePad`"
+        default:
+            fatalError("Unexpected Keyboard type")
+        }
+    }
+}
