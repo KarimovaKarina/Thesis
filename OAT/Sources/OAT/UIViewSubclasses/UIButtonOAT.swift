@@ -22,12 +22,18 @@ public func checkAccessibility(
 ) {
     var errors: [AccessibilityError] = []
     if let textInput = view as? UITextInput {
-        errors = UITextInputOAT().check(textInput)
+        errors.append(contentsOf: UITextInputOAT().check(textInput))
+    }
+    if let label = view as? UILabel {
+        errors.append(contentsOf: UITextInputOAT().checkAttributedString(label))
+    }
+    if let textView = view as? UITextView {
+        errors.append(contentsOf: UITextInputOAT().checkAttributedString(textView))
     }
     if let button = view as? UIButton {
-        errors = checker.check(button)
+        errors.append(contentsOf: checker.check(button))
     } else if let imageView = view as? UIImageView, exclude != .images {
-        errors = imageViewChecker.check(imageView)
+        errors.append(contentsOf: imageViewChecker.check(imageView))
     }
     
     errors.forEach { error in

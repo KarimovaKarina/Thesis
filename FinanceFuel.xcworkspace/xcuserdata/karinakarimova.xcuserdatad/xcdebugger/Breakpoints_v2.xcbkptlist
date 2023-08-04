@@ -3,4 +3,166 @@
    uuid = "C7DA158C-F30D-4AB7-BDA9-8821539939CB"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "697ADC5D-74EF-4C27-B577-9DD2D87868A5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "checkAttributedString()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "697ADC5D-74EF-4C27-B577-9DD2D87868A5 - 54fecab5c0980852"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSAttributedString.checkAttributedString() -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "697ADC5D-74EF-4C27-B577-9DD2D87868A5 - 54fecab5c0980852"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSAttributedString.checkAttributedString() -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "620">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6FB27DA1-460A-46EC-965C-3A6922EEE608"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "checkAttributedString()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6FB27DA1-460A-46EC-965C-3A6922EEE608 - 54fecab5c0980dfe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSAttributedString.checkAttributedString() -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2776">
+               </Location>
+               <Location
+                  uuid = "6FB27DA1-460A-46EC-965C-3A6922EEE608 - 54fecab5c0980dfe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSAttributedString.checkAttributedString() -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2772">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "090E51D8-42B5-4E64-BD37-6A1EAF24A085"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "checkAttributedString()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "090E51D8-42B5-4E64-BD37-6A1EAF24A085 - 54fecab5c0980e43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSAttributedString.checkAttributedString() -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "2272">
+               </Location>
+               <Location
+                  uuid = "090E51D8-42B5-4E64-BD37-6A1EAF24A085 - 54fecab5c0980e43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSAttributedString.checkAttributedString() -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "2268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BF4C9B6-7C25-4B1D-B816-53B1EFB02ACD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "checkLineSpacingHeight(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

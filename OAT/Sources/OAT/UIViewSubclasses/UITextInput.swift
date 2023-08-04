@@ -20,4 +20,14 @@ class UITextInputOAT {
         
         return errors
     }
+    
+    func checkAttributedString(_ textInput: UIView) -> [any AccessibilityError] {
+        if let label = textInput as? UILabel {
+            return label.attributedText.map{ $0.checkAttributedString() } ?? []
+        } else if let textView = textInput as? UITextView {
+            return textView.attributedText.map{ $0.checkAttributedString() } ?? []
+        } else {
+            return []
+        }
+    }
 }
