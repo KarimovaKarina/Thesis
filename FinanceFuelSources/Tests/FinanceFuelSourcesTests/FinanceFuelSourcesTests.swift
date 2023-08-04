@@ -4,7 +4,7 @@ import OAT
 
 final class FinanceFuelSourcesTests: XCTestCase {
     func testExample() throws {        
-        let button = AccessibleButton(title: "Ok", hint: "Saves your edits.", color: .mainColor, titleColor: .blue)
+        let button = AccessibleButton(title: "Ok", hint: "Saves your edits.", color: .white, titleColor: .gray)
         checkAccessibility(button)
     }
     

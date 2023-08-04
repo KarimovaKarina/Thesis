@@ -65,7 +65,26 @@ class UIButtonOAT {
             }
         }
         
+        errors.append(contentsOf: checkTitleAndBackgroundColor(button))
+        
         return errors
+    }
+    
+    func checkTitleAndBackgroundColor(_ button: UIButton) -> [any AccessibilityError]  {
+        guard button.isEnabled,
+              let font = button.titleLabel?.font.pointSize,
+              let isBold = button.titleLabel?.font.fontDescriptor.symbolicTraits.contains(.traitBold)
+        else { return [] }
+        let conditionFont: CGFloat = isBold ? 14 : 18
+        let minimumContrast = font < conditionFont ? 4.5 / 1 : 3.0 / 1
+        
+        if let backgroundColor = button.backgroundColor {
+            let actualContrast = UIColor.contrastRatio(between: button.currentTitleColor, and: backgroundColor)
+            print("actualContrast == \(actualContrast) \n minimumContrast == \(minimumContrast)")
+            return actualContrast < minimumContrast ? [ContrastError.contrastRatioSmallText] : []
+        } else {
+            return []
+        }
     }
     
     func test(_ button: UIButton) -> Bool {
