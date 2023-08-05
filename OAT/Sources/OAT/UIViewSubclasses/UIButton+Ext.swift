@@ -4,7 +4,7 @@ extension UIButton: AccessibilityCheckable {
     func check() -> [any AccessibilityError] {
         let button = self
         var errors: [AccessibilityError] = []
-        let defaultAccessibilityLabel = button.currentTitle
+        let defaultAccessibilityLabel = button.titleLabel?.text ?? button.currentTitle
         let actualAccessibilityLabel = button.accessibilityLabel
         
         if actualAccessibilityLabel == nil, defaultAccessibilityLabel == nil {
@@ -47,7 +47,7 @@ extension UIButton: AccessibilityCheckable {
         }
     }
     
-    func test() -> Bool {
+    func isAccessible() -> Bool {
         check().isEmpty ? true : false
     }
 }

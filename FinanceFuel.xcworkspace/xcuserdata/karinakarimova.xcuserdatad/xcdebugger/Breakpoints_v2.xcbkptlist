@@ -97,6 +97,21 @@
                   endingLineNumber = "29"
                   offsetFromSymbolStart = "2772">
                </Location>
+               <Location
+                  uuid = "6FB27DA1-460A-46EC-965C-3A6922EEE608 - c6d68a758ec5f54f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSAttributedString.checkAttributedString() -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "OATTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Common/NSAttributedString+Ext.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2772">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

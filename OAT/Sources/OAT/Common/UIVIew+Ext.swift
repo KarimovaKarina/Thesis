@@ -15,7 +15,7 @@ extension UIView {
             errors.append(AccessibilityLabelError.endsWithPeriod)
         }
        
-        let stopWords = AccessibilityLabelError.stopWords.filter{ accessiblityLabel.contains($0)}
+        let stopWords = AccessibilityLabelError.stopWords.filter{ accessiblityLabel.lowercased().contains($0)}
         if !stopWords.isEmpty {
             errors.append(AccessibilityLabelError.containsType(stopWords))
         }
