@@ -12,12 +12,17 @@ extension UIColor {
     }
 
     private func luminance() -> CGFloat {
+        //https://www.w3.org/TR/WCAG20-TECHS/G18.html#G18-tests
         let ciColor = CIColor(color: self)
 
         func adjust(colorComponent: CGFloat) -> CGFloat {
-            return (colorComponent < 0.04045) ? (colorComponent / 12.92) : pow((colorComponent + 0.055) / 1.055, 2.4)
+            (colorComponent < 0.04045)
+                ? (colorComponent / 12.92)
+                : pow((colorComponent + 0.055) / 1.055, 2.4)
         }
 
-        return 0.2126 * adjust(colorComponent: ciColor.red) + 0.7152 * adjust(colorComponent: ciColor.green) + 0.0722 * adjust(colorComponent: ciColor.blue)
+        return 0.2126 * adjust(colorComponent: ciColor.red)
+                + 0.7152 * adjust(colorComponent: ciColor.green)
+                + 0.0722 * adjust(colorComponent: ciColor.blue)
     }
 }

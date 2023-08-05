@@ -1,48 +1,8 @@
-import XCTest
 import UIKit
 
-private let checker = UIButtonOAT()
-private let imageViewChecker = UIImageViewOAT()
-
-public enum ExcludedChecks {
-    case images
-}
-
-public extension UIView {
-    func check() {
-        checkAccessibility(self)
-    }
-}
-public func checkAccessibility(
-    _ view: UIView,
-    exclude: ExcludedChecks? = nil,
-    file: StaticString = #file,
-    testName: String = #function,
-    line: UInt = #line
-) {
-    var errors: [AccessibilityError] = []
-    if let textInput = view as? UITextInput {
-        errors.append(contentsOf: UITextInputOAT().check(textInput))
-    }
-    if let label = view as? UILabel {
-        errors.append(contentsOf: UITextInputOAT().checkAttributedString(label))
-    }
-    if let textView = view as? UITextView {
-        errors.append(contentsOf: UITextInputOAT().checkAttributedString(textView))
-    }
-    if let button = view as? UIButton {
-        errors.append(contentsOf: checker.check(button))
-    } else if let imageView = view as? UIImageView, exclude != .images {
-        errors.append(contentsOf: imageViewChecker.check(imageView))
-    }
-    
-    errors.forEach { error in
-        XCTFail(error.errorMessage, file: file, line: line)
-    }
-}
-
-class UIButtonOAT {
-    func check(_ button: UIButton) -> [any AccessibilityError] {
+extension UIButton: AccessibilityCheckable {
+    func check() -> [any AccessibilityError] {
+        let button = self
         var errors: [AccessibilityError] = []
         let defaultAccessibilityLabel = button.currentTitle
         let actualAccessibilityLabel = button.accessibilityLabel
@@ -87,7 +47,7 @@ class UIButtonOAT {
         }
     }
     
-    func test(_ button: UIButton) -> Bool {
-        check(button).isEmpty ? true : false
+    func test() -> Bool {
+        check().isEmpty ? true : false
     }
 }

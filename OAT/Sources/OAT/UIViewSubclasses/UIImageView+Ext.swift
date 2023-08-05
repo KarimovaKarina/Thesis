@@ -1,15 +1,15 @@
 import UIKit
 
-class UIImageViewOAT: UIImageView {
-    func check(_ imageView: UIImageView) -> [any AccessibilityError] {
+extension UIImageView: AccessibilityCheckable {
+    func check() -> [any AccessibilityError] {
         var errors: [AccessibilityError] = []
        
-        if !imageView.isAccessibilityElement {
+        if !self.isAccessibilityElement {
             errors.append(AccessibilityElementError.isNotAccessibilityElement)
         }
         
-        if let label = imageView.accessibilityLabel {
-            errors.append(contentsOf: imageView.checkAccessiblityLabel(label))
+        if let label = self.accessibilityLabel {
+            errors.append(contentsOf: self.checkAccessiblityLabel(label))
         } else {
             errors.append(AccessibilityLabelError.labelIsMissing)
         }
