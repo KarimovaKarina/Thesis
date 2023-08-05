@@ -1,7 +1,7 @@
 import XCTest
 @testable import OAT
 
-final class OATTests: XCTestCase {
+final class AccessibilityLabelErrorTests: XCTestCase {
     var listOfErrors: [AccessibilityLabelError] = { AccessibilityLabelError.allCases }()
     
     func testAll() throws {
@@ -32,79 +32,64 @@ final class OATTests: XCTestCase {
 
 //MARK: - Negative
 
-extension OATTests {
+extension AccessibilityLabelErrorTests {
     func testLabelIsMissing() {
         let button = UIButton()
-        let result = button.isAccessible()
 
-        XCTAssertFalse(result)
+        XCTAssertFalse(button.isAccessible())
     }
 
     func testLabelIsEmpty() {
         let button = UIButton()
         button.accessibilityLabel = ""
         
-        let result = button.isAccessible()
-
-        XCTAssertFalse(result)
+        XCTAssertFalse(button.isAccessible())
     }
     
     func testLabelEndsWithPeriod() {
         
         let button = UIButton()
         button.accessibilityLabel = "Name."
-        
-        let result = button.isAccessible()
-        
-        XCTAssertFalse(result)
+                
+        XCTAssertFalse(button.isAccessible())
     }
     
     func testLabelContainsType() {
         let button = UIButton()
         button.accessibilityLabel = "button"
-        
-        let result = button.isAccessible()
-        
-        XCTAssertFalse(result)
+                
+        XCTAssertFalse(button.isAccessible())
     }
     
     func testLabelFirstWordIsNotCapitalized() {
         let button = UIButton()
         button.accessibilityLabel = "Button"
-        
-        let result = button.isAccessible()
-        
-        XCTAssertFalse(result)
+                
+        XCTAssertFalse(button.isAccessible())
     }
 }
 
 //MARK: - Positive
 
-extension OATTests {
+extension AccessibilityLabelErrorTests {
     func testLabelIsAccessible() {
         let button = UIButton()
         button.accessibilityLabel = "Log in"
-        
-        let result = button.isAccessible()
-        
-        XCTAssertTrue(result)
+                
+        XCTAssertTrue(button.isAccessible())
     }
     
     func testCurrentTitleIsAccessible() {
         let button = UIButton()
         button.setTitle("Log in", for: .normal)
-        
-        let result = button.isAccessible()
-        
-        XCTAssertTrue(result)
+                
+        XCTAssertTrue(button.isAccessible())
     }
     
     func testTitleLabelIsAccessible() {
         let button = UIButton()
         button.titleLabel?.text = "Log in"
-        
-        let result = button.isAccessible()
-        
-        XCTAssertTrue(result)
+                
+        XCTAssertTrue(button.isAccessible())
     }
 }

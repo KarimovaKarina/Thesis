@@ -38,7 +38,7 @@ extension UIView {
             errors.append(AccessibilityHintError.doesNotEndsWithPeriod)
         }
        
-        let stopWords = AccessibilityHintError.stopWords.filter{ accessiblityHint.contains($0)}
+        let stopWords = AccessibilityHintError.stopWords.filter{ accessiblityHint.lowercased().contains($0)}
         if !stopWords.isEmpty {
             errors.append(AccessibilityLabelError.containsType(stopWords))
         }
