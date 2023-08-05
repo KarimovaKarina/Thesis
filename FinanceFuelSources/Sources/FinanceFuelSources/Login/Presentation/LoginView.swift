@@ -7,11 +7,16 @@ internal final class LoginView: UIView {
         loginButton.tapPublisher
     }
     
+    var termsAndConditionsDidTap: AnyPublisher<String, Never> {
+        termsAndConditions.didTap
+    }
+    
     private let mainLabelTitle: String
     private let buttonTitle: String
     private let mainLabel = UILabel()
     private let usernameTextField = UITextField()
     private let passwordTextField = UITextField()
+    private let termsAndConditions = TappableTextView(tappableText: ["terms and conditions"], fullText: "Accept our terms and conditions")
     private let stackView = UIStackView()
     private lazy var loginButton = AccessibleButton(title: buttonTitle, color: .black, titleColor: .white)
     
@@ -48,7 +53,7 @@ internal final class LoginView: UIView {
         stackView.alignment = .fill
         stackView.spacing = 24
         stackView.axis = .vertical
-        [usernameTextField, passwordTextField, loginButton].forEach { subview in
+        [usernameTextField, passwordTextField, termsAndConditions, loginButton].forEach { subview in
             subview.constrain(.height, constant: 50)
             stackView.addArrangedSubview(subview)
         }

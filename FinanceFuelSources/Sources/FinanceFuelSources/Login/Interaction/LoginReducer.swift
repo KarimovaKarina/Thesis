@@ -12,6 +12,9 @@ internal enum LoginReducer {
             
         case .userDidTapRegister:
             return Just(env.makeHomeScene()).map{ LoginEffect.nothing }.eraseToAnyPublisher()
+            
+        case .userDidTapTermsAndConditions:
+            return Just(env.showTermsAndConditions()).map{ LoginEffect.nothing }.eraseToAnyPublisher()
         }
     }
     

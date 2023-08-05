@@ -21,6 +21,10 @@ internal class LoginViewController: UIViewController {
             .sink(receiveValue: { [evenSubject] in evenSubject.send(.userDidTapLogin) })
             .store(in: &subscriptions)
         
+        loginView.termsAndConditionsDidTap
+            .sink(receiveValue: { [evenSubject] _ in evenSubject.send(.userDidTapTermsAndConditions) })
+            .store(in: &subscriptions)
+        
         return evenSubject.eraseToAnyPublisher()
     }
 }
