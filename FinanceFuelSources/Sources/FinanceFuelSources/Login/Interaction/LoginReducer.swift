@@ -8,13 +8,32 @@ internal enum LoginReducer {
     ) -> AnyPublisher<LoginEffect, Never> {
         switch event {
         case .userDidTapLogin:
-            return Just(env.makeHomeScene()).map{ LoginEffect.nothing }.eraseToAnyPublisher()
+            return Just(env.makeHomeScene())
+                .map{ LoginEffect.nothing }
+                .eraseToAnyPublisher()
             
-        case .userDidTapRegister:
-            return Just(env.makeHomeScene()).map{ LoginEffect.nothing }.eraseToAnyPublisher()
+        case let .userDidTapRegister((email, password)):
+            guard let email = email else {
+                return Just(LoginEffect.emailError).eraseToAnyPublisher()
+            }
+            
+            guard let password = password else {
+                return Just(LoginEffect.passwordError).eraseToAnyPublisher()
+            }
+            
+            return env.register(.init(email: email, password: password))
+                .flatMap { Just(env.makeHomeScene())
+                        .setFailureType(to: Error.self)
+                        .eraseToAnyPublisher()
+                }
+                .map{ LoginEffect.nothing }
+                .catch { Just(LoginEffect.errorOccured($0)) }
+                .eraseToAnyPublisher()
             
         case .userDidTapTermsAndConditions:
-            return Just(env.showTermsAndConditions()).map{ LoginEffect.nothing }.eraseToAnyPublisher()
+            return Just(env.showTermsAndConditions())
+                .map{ LoginEffect.nothing }
+                .eraseToAnyPublisher()
         }
     }
     
@@ -22,11 +41,23 @@ internal enum LoginReducer {
         state: LoginState,
         effect: LoginEffect
     ) -> LoginState {
-        let newState = state
-        
+        var newState = state
+        newState.error = nil
+        newState.emailError = nil
+        newState.password = nil
+
         switch effect {
         case .nothing:
             break
+            
+        case let .errorOccured(error):
+            newState.error = error
+            
+        case .emailError:
+            newState.emailError = "Is Empty"
+            
+        case .passwordError:
+            newState.passwordError = "Is Empty"
         }
         return newState
     }

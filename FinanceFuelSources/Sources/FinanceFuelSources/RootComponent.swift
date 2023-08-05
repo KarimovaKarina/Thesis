@@ -1,11 +1,17 @@
 import UIKit
+import Combine
 
 public struct RootComponent {
-    public init(window: UIWindow) {
-        self.window = window
-    }
-    
     let window: UIWindow
+    let register: (UserData) -> AnyPublisher<Void, Error>
+    
+    public init(
+        window: UIWindow,
+        register: @escaping (UserData) -> AnyPublisher<Void, Error>
+) {
+        self.window = window
+        self.register = register
+    }
     
     public func start() {
         WelcomeComponent(parent: self)

@@ -14,6 +14,7 @@ public struct WelcomeComponent {
     private func makeLoginScene(_ rootController: UIViewController) {
         LoginScene.start(
             rootViewController: rootController,
+            register: parent.register,
             showTermsAndConditions: showTermsAndConditions,
             makeHomeScene: {
                 let vc = TabBarController()
@@ -26,6 +27,7 @@ public struct WelcomeComponent {
     private func makeRegisterScene(_ rootController: UIViewController) {
         LoginScene.start(
             rootViewController: rootController,
+            register: parent.register,
             showTermsAndConditions: showTermsAndConditions,
             makeHomeScene: {
                 let vc = TabBarController()

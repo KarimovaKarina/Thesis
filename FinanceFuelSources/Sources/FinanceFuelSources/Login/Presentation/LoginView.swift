@@ -3,8 +3,10 @@ import Combine
 import CombineCocoa
 
 internal final class LoginView: UIView {
-    var logInDidTap: AnyPublisher<Void, Never> {
+    var logInDidTap: AnyPublisher<(String?, String?), Never> {
         loginButton.tapPublisher
+            .map { [unowned self] _ in (usernameTextField.text, passwordTextField.text) }
+            .eraseToAnyPublisher()
     }
     
     var termsAndConditionsDidTap: AnyPublisher<String, Never> {

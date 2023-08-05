@@ -1,7 +1,7 @@
 import Foundation
 
 internal enum LoginEvent {
-    case userDidTapLogin
-    case userDidTapRegister
+    case userDidTapLogin((String?, String?))
+    case userDidTapRegister((String?, String?))
     case userDidTapTermsAndConditions
 }
