@@ -1,3 +1,4 @@
+import UIKit
 
 protocol AccessibilityCheckable {
     func check() -> [any AccessibilityError]
@@ -9,25 +10,26 @@ extension AccessibilityCheckable {
     }
 }
 
-import UIKit
 
-extension AccessibilityCheckable {
+extension UIView {
+    private var internalClassNames: [String] {
+        ["UIButtonLabel"]
+    }
     
     func recursiveCheck(with excluding: [ExcludedChecks]) -> [any AccessibilityError] {
-
-        guard !excluding.shouldBeExcluded(self)
+        guard
+            !excluding.shouldBeExcluded(self),
+            !self.isAccessibilityElement,
+            !internalClassNames.contains(Self.description())
         else { return [] }
             
-        let errorsOfParentView = self.check()
+        let errorsOfParentView = (self as? AccessibilityCheckable)?.check() ?? []
 
-        let errorsOfChildViews = (self as? UIView)?.subviews
-            .compactMap { $0 as? AccessibilityCheckable }
+        let errorsOfChildViews =
+        subviews
             .map { $0.recursiveCheck(with: excluding) }
-            .flatMap { $0 } ?? []
-
+            .flatMap { $0 }
 
         return errorsOfParentView + errorsOfChildViews
-        
-        
     }
 }

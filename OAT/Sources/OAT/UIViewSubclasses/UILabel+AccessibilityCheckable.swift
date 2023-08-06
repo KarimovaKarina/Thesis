@@ -6,6 +6,6 @@ extension UILabel: AccessibilityCheckable {
     }
     
     private func checkAttributedString() -> [any AccessibilityError] {
-        self.attributedText.map{ $0.checkAttributedString() } ?? []
+        self.attributedText.map { $0.checkAttributedString() } ?? []
     }
 }

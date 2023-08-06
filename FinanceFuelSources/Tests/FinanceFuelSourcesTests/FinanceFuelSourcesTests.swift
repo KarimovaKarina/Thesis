@@ -4,7 +4,12 @@ import OAT
 
 final class FinanceFuelSourcesTests: XCTestCase {
     func testExample() throws {        
-        let button = AccessibleButton(title: "Ok", hint: "Saves your edits.", color: .white, titleColor: .gray)
+        let button = AccessibleButton(
+            title: "Ok",
+            hint: "Saves your edits.",
+            color: .white,
+            titleColor: .gray
+        )
         checkAccessibility(button)
     }
     
@@ -12,14 +17,14 @@ final class FinanceFuelSourcesTests: XCTestCase {
         let image = UIImageView()
         image.isAccessibilityElement = true
         image.accessibilityLabel = "App icon"
-        checkAccessibility(image, exclude: .images)
+        checkAccessibility(image)
     }
     
     func testTextField() throws {
         let image = UITextView()
         image.textContentType = .telephoneNumber
         image.keyboardType = .namePhonePad
-        checkAccessibility(image, exclude: .images)
+        checkAccessibility(image)
     }
     
     func testLabel() throws {
@@ -63,6 +68,11 @@ final class FinanceFuelSourcesTests: XCTestCase {
         label.attributedText = fullTextAttr
         
         checkAccessibility(label)
+    }
+    
+    func testHierarchy() {
+        let view = LoginView(mainLabelTitle: "Ola", buttonTitle: "Ola-la")
+        checkAccessibility(view)
     }
 }
 

@@ -3,4 +3,243 @@
    uuid = "C7DA158C-F30D-4AB7-BDA9-8821539939CB"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FCD1C5DE-05E8-4FFE-9CD8-A66A47D4F3AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OAT/Sources/OAT/Main/CheckAccessibility.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "checkAccessibility(_:with:file:testName:line:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "FCD1C5DE-05E8-4FFE-9CD8-A66A47D4F3AB - 4aee93f81d724508"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OAT.checkAccessibility(_: __C.UIView, with: OAT.AccessibilitySettings, file: Swift.StaticString, testName: Swift.String, line: Swift.UInt) -&gt; ()"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Main/CheckAccessibility.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "FCD1C5DE-05E8-4FFE-9CD8-A66A47D4F3AB - 4aee93f81d724672"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OAT.checkAccessibility(_: __C.UIView, with: OAT.AccessibilitySettings, file: Swift.StaticString, testName: Swift.String, line: Swift.UInt) -&gt; ()"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Main/CheckAccessibility.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E880BAB-E951-40A7-B4B8-400227412705"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OAT/Sources/OAT/Main/CheckAccessibility.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "checkAccessibility(_:with:file:testName:line:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "1E880BAB-E951-40A7-B4B8-400227412705 - 4aee93f81d72448c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OAT.checkAccessibility(_: __C.UIView, with: OAT.AccessibilitySettings, file: Swift.StaticString, testName: Swift.String, line: Swift.UInt) -&gt; ()"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Main/CheckAccessibility.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "1E880BAB-E951-40A7-B4B8-400227412705 - 4aee93f81d72448c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OAT.checkAccessibility(_: __C.UIView, with: OAT.AccessibilitySettings, file: Swift.StaticString, testName: Swift.String, line: Swift.UInt) -&gt; ()"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Main/CheckAccessibility.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "1E880BAB-E951-40A7-B4B8-400227412705 - 4aee93f81d72448c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OAT.checkAccessibility(_: __C.UIView, with: OAT.AccessibilitySettings, file: Swift.StaticString, testName: Swift.String, line: Swift.UInt) -&gt; ()"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Main/CheckAccessibility.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54F59A2E-9116-4B89-8187-59BD32575B84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OAT/Sources/OAT/UIViewSubclasses/UILabel+AccessibilityCheckable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "checkAttributedString()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "54F59A2E-9116-4B89-8187-59BD32575B84 - d24b1cdf0530eb8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UILabel.checkAttributedString() -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/UIViewSubclasses/UILabel+AccessibilityCheckable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "54F59A2E-9116-4B89-8187-59BD32575B84 - b125d279e3cb5765"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSAttributedString) -&gt; Swift.Array&lt;OAT.AccessibilityError&gt; in __C.UILabel.checkAttributedString() -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/UIViewSubclasses/UILabel+AccessibilityCheckable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B51A34D-1593-4525-BDE1-E3DD939680DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OAT/Sources/OAT/Main/AccessibilityCheckable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "recursiveCheck(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5B51A34D-1593-4525-BDE1-E3DD939680DE - 381f0423fe75ea5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIView.recursiveCheck(with: Swift.Array&lt;OAT.ExcludedChecks&gt;) -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Main/AccessibilityCheckable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "5B51A34D-1593-4525-BDE1-E3DD939680DE - 381f0423fe75ea5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIView.recursiveCheck(with: Swift.Array&lt;OAT.ExcludedChecks&gt;) -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Main/AccessibilityCheckable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  uuid = "5B51A34D-1593-4525-BDE1-E3DD939680DE - 381f0423fe75ea5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIView.recursiveCheck(with: Swift.Array&lt;OAT.ExcludedChecks&gt;) -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Main/AccessibilityCheckable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "5B51A34D-1593-4525-BDE1-E3DD939680DE - 381f0423fe75ea5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIView.recursiveCheck(with: Swift.Array&lt;OAT.ExcludedChecks&gt;) -&gt; Swift.Array&lt;OAT.AccessibilityError&gt;"
+                  moduleName = "FinanceFuelSourcesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karinakarimova/Developer/Thesis/FinanceFuel/OAT/Sources/OAT/Main/AccessibilityCheckable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
