@@ -14,9 +14,8 @@ extension AccessibilityLabelError: AccessibilityError {
         switch self {
         case let .labelIsMissing(type):
             return """
-                    accessibilityLabel or its default value by means of
-                    element title/text are missing. \n
-                    UI element description: \(type.description)
+            accessibilityLabel or its default value by means of element title/text are missing. \n
+            UI element description: \(type.description)
             """
             
         case .labelIsEmpty:
