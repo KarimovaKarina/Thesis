@@ -8,14 +8,31 @@ public func checkAccessibility(
     testName: String = #function,
     line: UInt = #line
 ) {
+    let errors = collectErrors(for: view, with: settings)
+    errors.forEach { error in
+        XCTFail(error.errorMessage, file: file, line: line)
+    }
+}
+
+// inernal for tests invokations
+func collectErrors(
+    for view: UIView,
+    with settings: AccessibilitySettings = .default
+) -> [AccessibilityError] {
     guard !settings.excluding.shouldBeExcluded(view)
-    else { return }
+    else { return [] }
     
     let accessibilityErrors = settings.recursiveChecking
         ? view.recursiveCheck(with: settings.excluding)
         : ((view as? AccessibilityCheckable)?.check() ?? [])
     
-    accessibilityErrors.forEach { error in
-        XCTFail(error.errorMessage, file: file, line: line)
+    return accessibilityErrors
+}
+
+
+extension UIView {
+    // var Bool
+    func isAccessible() -> Bool {
+        collectErrors(for: self, with: .default).isEmpty
     }
 }

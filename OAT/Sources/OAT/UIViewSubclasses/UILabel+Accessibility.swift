@@ -1,7 +1,7 @@
 import UIKit
 
-extension UILabel: AccessibilityCheckable {
-    func check() -> [AccessibilityError] {
+extension UILabel {
+    func customCheck() -> [any AccessibilityError] {
         checkAttributedString()
     }
     

@@ -1,7 +1,7 @@
 import UIKit
 
-extension UITextView: AccessibilityCheckable {
-    func check() -> [any AccessibilityError] {
+extension UITextView {
+    func customCheck() -> [any AccessibilityError] {
         checkKeyboardAndContentType() + attributedText.checkAttributedString()
     }
     

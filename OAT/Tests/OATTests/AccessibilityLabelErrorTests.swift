@@ -71,6 +71,27 @@ extension AccessibilityLabelErrorTests {
                 
         XCTAssertFalse(button.isAccessible())
     }
+    
+    func testDuplicated() {
+        let button1 = UIButton()
+        button1.accessibilityLabel = "Register"
+        
+        let button2 = UIButton()
+        button2.accessibilityLabel = "Register"
+        
+        let view = UIView()
+        view.accessibilityLabel = ""
+        view.isAccessibilityElement = true
+        view.addSubview(button1)
+        view.addSubview(button2)
+                
+//        let errors = collectErrors(for: view, with: .default)
+        
+        XCTAssertFalse(view.isAccessible())
+//        view.recursiveCheck(with: []).forEach { error in
+//            XCTAssert(false, error.errorMessage)
+//        }
+    }
 }
 
 //MARK: - Positive

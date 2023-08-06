@@ -1,7 +1,7 @@
 import UIKit
 
-extension UITextField: AccessibilityCheckable {
-    func check() -> [any AccessibilityError] {
+extension UITextField {
+    func customCheck() -> [any AccessibilityError] {
         checkKeyboardAndContentType()
     }
 }

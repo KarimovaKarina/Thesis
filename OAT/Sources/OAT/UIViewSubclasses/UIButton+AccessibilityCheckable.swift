@@ -8,7 +8,7 @@ extension UIView {
         return (parentLabel + childLabels).compactMap { $0 }
     }
     
-    func recursiveCheck() -> [any AccessibilityError] {
+    func recursiveCheck2() -> [any AccessibilityError] {
         let labels = subviewLabels(for: self)
     
         if Set(labels).count == labels.count {
@@ -19,36 +19,27 @@ extension UIView {
     }
 }
 
-extension UIButton: AccessibilityCheckable {
-    func check() -> [any AccessibilityError] {
-        checkMainStuff() + checkTitleAndBackgroundColor() // + recursiveCheck()
-    }
-    
-    func checkMainStuff() -> [any AccessibilityError] {
+extension UIButton {
+    func getDafaultValue() -> [any AccessibilityError] {
         var errors: [AccessibilityError] = []
         let defaultAccessibilityLabel = self.titleLabel?.text ?? self.currentTitle
-        let actualAccessibilityLabel = self.accessibilityLabel
-        
-        
-        if actualAccessibilityLabel == nil, defaultAccessibilityLabel == nil {
+    
+        if defaultAccessibilityLabel == nil {
             errors.append(AccessibilityLabelError.labelIsMissing)
             
-        } else if let actualAccessibilityLabel {
-            errors.append(contentsOf: self.checkAccessiblity(for: actualAccessibilityLabel))
-            
         } else if let defaultAccessibilityLabel {
-            errors.append(contentsOf: self.checkAccessiblity(for: defaultAccessibilityLabel))
+            errors.append(contentsOf: self.checkCommonAccessibility(accessibilityLabel: defaultAccessibilityLabel))
         }
 
-        if let hint = self.accessibilityHint {
-            errors.append(contentsOf: self.checkAccessibilityHint(hint))
-        }
-        
-        if let hint = self.accessibilityHint, let label = self.accessibilityLabel ?? self.currentTitle {
-            if hint.contains(label + " ") {
-                errors.append(AccessibilityHintError.containsLabel)
-            }
-        }
+//        if let hint = self.accessibilityHint {
+//            errors.append(contentsOf: self.checkAccessibilityHint(hint))
+//        }
+//
+//        if let hint = self.accessibilityHint, let label = self.accessibilityLabel ?? self.currentTitle {
+//            if hint.contains(label + " ") {
+//                errors.append(AccessibilityHintError.containsLabel)
+//            }
+//        }
         
         return errors
     }
