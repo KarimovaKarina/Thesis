@@ -2,30 +2,7 @@ import UIKit
 
 extension UIButton {
     func customChecks() -> [any AccessibilityError] {
-        customCheckOfAccessibilityLabel()
-        + checkTitleAndBackgroundColor()
-        + checkAccessibilityHint()
-    }
-    
-    private func customCheckOfAccessibilityLabel() -> [any AccessibilityError] {
-        var errors: [AccessibilityError] = []
-        let defaultAccessibilityLabel = self.titleLabel?.text ?? self.currentTitle
-        let actualAccessibilityLabel = self.accessibilityLabel ?? defaultAccessibilityLabel
-
-        errors += checkCommonAccessibility(accessibilityLabel: actualAccessibilityLabel)
-       
-
-//        if let hint = self.accessibilityHint {
-//            errors.append(contentsOf: self.checkAccessibilityHint(hint))
-//        }
-//
-//        if let hint = self.accessibilityHint, let label = self.accessibilityLabel ?? self.currentTitle {
-//            if hint.contains(label + " ") {
-//                errors.append(AccessibilityHintError.containsLabel)
-//            }
-//        }
-        
-        return errors
+        checkTitleAndBackgroundColor()
     }
     
     private func checkTitleAndBackgroundColor() -> [any AccessibilityError]  {
@@ -43,5 +20,4 @@ extension UIButton {
             return []
         }
     }
-
 }

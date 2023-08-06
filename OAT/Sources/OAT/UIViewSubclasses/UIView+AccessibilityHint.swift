@@ -26,7 +26,7 @@ extension UIView {
             errors.append(AccessibilityLabelError.containsType(stopWords))
         }
         
-        if let label = self.accessibilityLabel {
+        if let label = self.actualAccessibilityLabel {
             if accessibilityHint.contains(label + " ") {
                 errors.append(AccessibilityHintError.containsLabel)
             }

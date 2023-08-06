@@ -1,19 +1,22 @@
 import UIKit
 
 extension UIView {
-    func checkAccessiblityLabel() -> [any AccessibilityError] {
-        if self is UIButton {
-            return []
+    // this property is used in AccessibilityHint checks to identify
+    // if hint contains the same string as accesibilityLabel
+    var actualAccessibilityLabel: String? {
+        if let button = self as? UIButton {
+            let defaultAccessibilityLabel = button.titleLabel?.text ?? button.currentTitle
+            return self.accessibilityLabel ?? defaultAccessibilityLabel
         } else {
-            return checkCommonAccessibility(accessibilityLabel: accessibilityLabel)
+            return accessibilityLabel
         }
     }
     
-    func checkCommonAccessibility(accessibilityLabel: String?)
-    -> [any AccessibilityError] {
-        guard let accessibilityLabel = accessibilityLabel else {
+    func checkAccessiblityLabel() -> [any AccessibilityError] {
+        guard let accessibilityLabel = actualAccessibilityLabel else {
             return [AccessibilityLabelError.labelIsMissing]
         }
+        
         guard !accessibilityLabel.isEmpty else {
             return [AccessibilityLabelError.labelIsEmpty]
         }
