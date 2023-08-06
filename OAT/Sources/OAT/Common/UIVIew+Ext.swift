@@ -1,7 +1,7 @@
 import UIKit
 
 extension UIView {
-    func checkAccessiblityLabel(_ accessiblityLabel: String) -> [any AccessibilityError] {
+    func checkAccessiblity(for accessiblityLabel: String) -> [any AccessibilityError] {
         guard !accessiblityLabel.isEmpty else {
             return [AccessibilityLabelError.labelIsEmpty]
         }

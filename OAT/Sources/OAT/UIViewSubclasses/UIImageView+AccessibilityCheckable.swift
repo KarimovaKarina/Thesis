@@ -9,7 +9,7 @@ extension UIImageView: AccessibilityCheckable {
         }
         
         if let label = self.accessibilityLabel {
-            errors.append(contentsOf: self.checkAccessiblityLabel(label))
+            errors.append(contentsOf: self.checkAccessiblity(for: label))
         } else {
             errors.append(AccessibilityLabelError.labelIsMissing)
         }

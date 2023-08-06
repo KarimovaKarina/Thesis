@@ -21,6 +21,10 @@ final class AccessibilityLabelErrorTests: XCTestCase {
                 
             case .firstWordIsNotCapitalized:
                 testLabelFirstWordIsNotCapitalized()
+            
+            case .duplicated:
+                break
+                // TODO: ME
             }
         }
         

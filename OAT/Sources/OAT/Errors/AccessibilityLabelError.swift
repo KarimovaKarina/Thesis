@@ -1,9 +1,12 @@
+import Foundation
+
 enum AccessibilityLabelError {
     case labelIsMissing
     case labelIsEmpty
     case containsType([String])
     case firstWordIsNotCapitalized
     case endsWithPeriod
+    case duplicated
 }
 
 extension AccessibilityLabelError: AccessibilityError {
@@ -23,6 +26,9 @@ extension AccessibilityLabelError: AccessibilityError {
             
         case .endsWithPeriod:
             return "accessibilityLabel is not a sentence and therefore should not end with a period."
+            
+        case .duplicated:
+            return "Something is duplicated..."
         }
     }
 }

@@ -1,17 +1,43 @@
 import UIKit
 
+extension UIView {
+    
+    private func subviewLabels(for view: UIView) -> [String] {
+        let parentLabel = [accessibilityLabel]
+        let childLabels = subviews.map { subviewLabels(for: $0) }.flatMap { $0 }
+        return (parentLabel + childLabels).compactMap { $0 }
+    }
+    
+    func recursiveCheck() -> [any AccessibilityError] {
+        let labels = subviewLabels(for: self)
+    
+        if Set(labels).count == labels.count {
+            return []
+        } else {
+            return [AccessibilityLabelError.duplicated]
+        }
+    }
+}
+
 extension UIButton: AccessibilityCheckable {
     func check() -> [any AccessibilityError] {
+        checkMainStuff() + checkTitleAndBackgroundColor() // + recursiveCheck()
+    }
+    
+    func checkMainStuff() -> [any AccessibilityError] {
         var errors: [AccessibilityError] = []
         let defaultAccessibilityLabel = self.titleLabel?.text ?? self.currentTitle
         let actualAccessibilityLabel = self.accessibilityLabel
         
+        
         if actualAccessibilityLabel == nil, defaultAccessibilityLabel == nil {
-           errors.append(AccessibilityLabelError.labelIsMissing)
+            errors.append(AccessibilityLabelError.labelIsMissing)
+            
         } else if let actualAccessibilityLabel {
-            errors.append(contentsOf: self.checkAccessiblityLabel(actualAccessibilityLabel))
+            errors.append(contentsOf: self.checkAccessiblity(for: actualAccessibilityLabel))
+            
         } else if let defaultAccessibilityLabel {
-            errors.append(contentsOf: self.checkAccessiblityLabel(defaultAccessibilityLabel))
+            errors.append(contentsOf: self.checkAccessiblity(for: defaultAccessibilityLabel))
         }
 
         if let hint = self.accessibilityHint {
@@ -23,8 +49,6 @@ extension UIButton: AccessibilityCheckable {
                 errors.append(AccessibilityHintError.containsLabel)
             }
         }
-        
-        errors.append(contentsOf: checkTitleAndBackgroundColor())
         
         return errors
     }
@@ -44,8 +68,5 @@ extension UIButton: AccessibilityCheckable {
             return []
         }
     }
-    
-    func isAccessible() -> Bool {
-        check().isEmpty ? true : false
-    }
+
 }
