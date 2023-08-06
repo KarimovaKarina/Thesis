@@ -1,24 +1,5 @@
 import UIKit
 
-extension UIView {
-    
-    private func subviewLabels(for view: UIView) -> [String] {
-        let parentLabel = [accessibilityLabel]
-        let childLabels = subviews.map { subviewLabels(for: $0) }.flatMap { $0 }
-        return (parentLabel + childLabels).compactMap { $0 }
-    }
-    
-    func recursiveCheck2() -> [any AccessibilityError] {
-        let labels = subviewLabels(for: self)
-    
-        if Set(labels).count == labels.count {
-            return []
-        } else {
-            return [AccessibilityLabelError.duplicated]
-        }
-    }
-}
-
 extension UIButton {
     func getDafaultValue() -> [any AccessibilityError] {
         var errors: [AccessibilityError] = []
