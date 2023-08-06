@@ -1,10 +1,3 @@
-//
-//  Font+Ext.swift
-//  FinanceFuel
-//
-//  Created by Karina Karimova on 22.02.2023.
-//
-
 import UIKit
 
 extension UIFont {
