@@ -4,6 +4,8 @@ extension UIView: AccessibilityCheckable {
     func check() -> [any AccessibilityError] {
         if self is UIControl {
             return checkAccessibleElement()
+        } else if self is UIImageView {
+            return [AccessibilityElementError.isNotAccessibilityElement]
         } else {
             guard isAccessibilityElement else { return [] }
             return checkAccessibleElement()
