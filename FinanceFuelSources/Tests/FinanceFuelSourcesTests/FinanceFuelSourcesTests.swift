@@ -15,7 +15,7 @@ final class FinanceFuelSourcesTests: XCTestCase {
     
     func testImageView() throws {
         let image = UIImageView()
-//        checkAccessibility(image, with: .init(excluding: [.images], recursiveChecking: false))
+        checkAccessibility(image, with: .init(excluding: [.images], recursiveChecking: false))
 //        image.isAccessibilityElement = true
 //        image.accessibilityLabel = "App icon"
 //        checkAccessibility(image)

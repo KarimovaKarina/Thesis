@@ -14,7 +14,7 @@ extension UIView {
     
     func checkAccessiblityLabel() -> [any AccessibilityError] {
         guard let accessibilityLabel = actualAccessibilityLabel else {
-            return [AccessibilityLabelError.labelIsMissing]
+            return [AccessibilityLabelError.labelIsMissing(self)]
         }
         
         guard !accessibilityLabel.isEmpty else {

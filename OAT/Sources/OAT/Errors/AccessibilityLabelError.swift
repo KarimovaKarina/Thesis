@@ -1,7 +1,7 @@
-import Foundation
+import UIKit
 
 enum AccessibilityLabelError {
-    case labelIsMissing
+    case labelIsMissing(UIView)
     case labelIsEmpty
     case containsType([String])
     case firstWordIsNotCapitalized
@@ -12,8 +12,12 @@ enum AccessibilityLabelError {
 extension AccessibilityLabelError: AccessibilityError {
     var errorMessage: String {
         switch self {
-        case .labelIsMissing:
-            return "accessibilityLabel and its default value by means of element title/text are missing."
+        case let .labelIsMissing(type):
+            return """
+                    accessibilityLabel or its default value by means of
+                    element title/text are missing. \n
+                    UI element description: \(type.description)
+            """
             
         case .labelIsEmpty:
             return "accessibilityLabel should not be empty string."
