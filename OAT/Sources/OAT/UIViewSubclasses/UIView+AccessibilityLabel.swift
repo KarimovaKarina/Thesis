@@ -2,20 +2,18 @@ import UIKit
 
 extension UIView {
     func checkAccessiblityLabel() -> [any AccessibilityError] {
-        guard let accessibilityLabel = accessibilityLabel else {
-            if let button = self as? UIButton {
-                return button.getDafaultValue()
-            } else {
-                return []
-            }
+        if self is UIButton {
+            return []
+        } else {
+            return checkCommonAccessibility(accessibilityLabel: accessibilityLabel)
         }
-        
-        var errors: [AccessibilityError] = []
-        errors.append(contentsOf: checkCommonAccessibility(accessibilityLabel: accessibilityLabel))
-        return errors
     }
     
-    func checkCommonAccessibility(accessibilityLabel: String) -> [any AccessibilityError] {
+    func checkCommonAccessibility(accessibilityLabel: String?)
+    -> [any AccessibilityError] {
+        guard let accessibilityLabel = accessibilityLabel else {
+            return [AccessibilityLabelError.labelIsMissing]
+        }
         guard !accessibilityLabel.isEmpty else {
             return [AccessibilityLabelError.labelIsEmpty]
         }
