@@ -8,7 +8,7 @@ extension UIButton {
     private func checkTitleAndBackgroundColor() -> [any AccessibilityError]  {
         guard self.isEnabled,
               let font = self.titleLabel?.font.pointSize,
-              let isBold = self.titleLabel?.font.fontDescriptor.symbolicTraits.contains(.traitBold)
+              let isBold = self.titleLabel?.font.isBold
         else { return [] }
         let conditionFont: CGFloat = isBold ? 14 : 18
         let minimumContrast = font < conditionFont ? 4.5 / 1 : 3.0 / 1
