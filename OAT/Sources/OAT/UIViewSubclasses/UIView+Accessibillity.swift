@@ -5,7 +5,10 @@ extension UIView: AccessibilityCheckable {
         if self is UIControl {
             return checkAccessibleElement()
         } else if self is UIImageView {
-            return [AccessibilityElementError.isNotAccessibilityElement]
+            guard isAccessibilityElement else {
+                return [AccessibilityElementError.isNotAccessibilityElement(self)]
+            }
+            return checkAccessibleElement()
         } else {
             guard isAccessibilityElement else { return [] }
             return checkAccessibleElement()
