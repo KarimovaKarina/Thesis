@@ -2,8 +2,17 @@ import UIKit
 
 extension UIView: AccessibilityCheckable {
     func check() -> [any AccessibilityError] {
+        if self is UIControl {
+            return checkAccessibleElement()
+        } else {
+            guard isAccessibilityElement else { return [] }
+            return checkAccessibleElement()
+        }
+    }
+    
+    private func checkAccessibleElement() -> [any AccessibilityError] {
         var errors: [AccessibilityError] = []
-
+        
         errors += checkAccessiblityLabel()
         errors += checkAccessibilityHint()
         errors += checkSubclasses()

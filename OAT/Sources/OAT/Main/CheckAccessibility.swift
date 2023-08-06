@@ -24,7 +24,7 @@ func collectErrors(
     
     let accessibilityErrors = settings.recursiveChecking
         ? view.recursiveCheck(with: settings.excluding)
-        : ((view as? AccessibilityCheckable)?.check() ?? [])
+        : view.check()
     
     return accessibilityErrors
 }

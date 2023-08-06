@@ -74,6 +74,12 @@ final class FinanceFuelSourcesTests: XCTestCase {
         let view = LoginView(mainLabelTitle: "Ola", buttonTitle: "Ola-la")
         checkAccessibility(view)
     }
+    
+    func testButton() {
+        let button = UIButton()
+        button.setTitle("", for: .normal)
+        checkAccessibility(button)
+    }
 }
 
 private extension Array where Element == String {
