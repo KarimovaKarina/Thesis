@@ -2,8 +2,8 @@ import Moonlight
 import UIKit
 import Combine
 
-internal struct LoginScene {
-    static func start(
+public struct LoginScene {
+    public static func start(
         rootViewController: UIViewController,
         register: @escaping (UserData) -> AnyPublisher<Void, Error>,
         showTermsAndConditions: @escaping (UIViewController) -> Void,

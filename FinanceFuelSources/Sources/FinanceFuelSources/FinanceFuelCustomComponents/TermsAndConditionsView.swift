@@ -1,12 +1,12 @@
 import MoonPresentation
 import UIKit
 
-internal final class TermsAndConditionsView: UIView {
+public final class TermsAndConditionsView: UIView {
     fileprivate let content = UILabel(frame: .zero)
     private let contentView = UIScrollView(frame: .zero)
     private let downloadedContent: String
 
-    init(downloadedContent: String) {
+    public init(downloadedContent: String) {
         self.downloadedContent = downloadedContent
         super.init(frame: .zero)
         setup()

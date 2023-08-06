@@ -1,8 +1,8 @@
 import UIKit
 import Moonlight
 
-internal enum WelcomeScene {
-    static func start(
+public enum WelcomeScene {
+    public static func start(
         setViewComtroller: (UIViewController) -> Void,
         makeLoginScene: @escaping (UIViewController) -> Void,
         makeRegisterScene: @escaping (UIViewController) -> Void

@@ -1,17 +1,10 @@
 import UIKit
+import FinanceFuelSources
 
-public struct WelcomeComponent {
+struct LoginComponent {
     let parent: RootComponent
     
-    public func makeWelcomeScene(setViewComtroller: @escaping (UIViewController) -> Void) {
-        WelcomeScene.start(
-            setViewComtroller: setViewComtroller,
-            makeLoginScene: makeLoginScene,
-            makeRegisterScene: makeRegisterScene
-        )
-    }
-    
-    private func makeLoginScene(_ rootController: UIViewController) {
+    func makeLoginScene(_ rootController: UIViewController) {
         LoginScene.start(
             rootViewController: rootController,
             register: parent.register,
@@ -24,7 +17,7 @@ public struct WelcomeComponent {
         )
     }
     
-    private func makeRegisterScene(_ rootController: UIViewController) {
+    func makeRegisterScene(_ rootController: UIViewController) {
         LoginScene.start(
             rootViewController: rootController,
             register: parent.register,

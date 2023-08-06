@@ -1,7 +1,7 @@
 import UIKit
 
-internal final class TabBarController: UITabBarController {
-    override func viewDidLoad() {
+public final class TabBarController: UITabBarController {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupVCs()
         setup()
