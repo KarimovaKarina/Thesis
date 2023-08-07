@@ -6,23 +6,49 @@ import UIKit
 final class FinanceFuelTests: XCTestCase {
     override class func setUp() {
         super.setUp()
-        let checksToBeInstalled: [GTXChecking] = GTXChecksCollection.allGTXChecks()
-        let tmp = GTXTestSuite.init(allTestsIn: FinanceFuelTests.self)
-        GTXiLib.install(on: tmp ?? GTXTestSuite(), checks: checksToBeInstalled, elementExcludeLists: [])
+        GTXiLib.install(
+            on: GTXTestSuite(allTestsIn: FinanceFuelTests.self),
+            checks: GTXChecksCollection.allGTXChecks(),
+            elementExcludeLists: []
+        )
     }
+    
+    override func tearDown() {
+        super.tearDown()
+    }
+    
+    func testLoginView() throws {
+        let view = LoginView(buttonTitle: "Register.")
+        let scene = UIApplication.shared.connectedScenes
+            .first { $0.activationState == .foregroundActive }
 
-    func testExample() throws {
-        let button = AccessibleButton(title: "Color.", color: .black, titleColor: .black)
-        button.frame = CGRect(x: 0, y: 0, width: 30, height: 40)
-        button.accessibilityLabel = "adjustable"
-        button.accessibilityHint = "Button opens link"
-        button.accessibilityTraits.insert(.link)
-
-        let allScenes = UIApplication.shared.connectedScenes
-        let scene = allScenes.first { $0.activationState == .foregroundActive }
-                                
         if let windowScene = scene as? UIWindowScene {
-                 windowScene.keyWindow?.addSubview(button)
+            windowScene.keyWindow?.addSubview(view)
+        }
+    }
+    
+    func testCustomView() throws {
+        let view = UIView()
+        view.backgroundColor = .brown
+        view.frame = .init(origin: .zero, size: .init(width: 300, height: 500))
+
+        let button = UIButton(frame: CGRect(x: 123, y: 123, width: 20, height: 10))
+        button.setTitle("Register.", for: .normal)
+
+        let image = UIImageView(frame: CGRect(x: 123, y: 173, width: 50, height: 50))
+        image.image = UIImage(named: "heart.fill")
+
+        image.isAccessibilityElement = true
+        image.accessibilityLabel = "App icon"
+
+        view.addSubview(button)
+        view.addSubview(image)
+
+        let scene = UIApplication.shared.connectedScenes
+            .first { $0.activationState == .foregroundActive }
+
+        if let windowScene = scene as? UIWindowScene {
+            windowScene.keyWindow?.addSubview(view)
         }
     }
 }
