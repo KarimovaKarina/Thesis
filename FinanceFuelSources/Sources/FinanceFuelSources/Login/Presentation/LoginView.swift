@@ -13,17 +13,14 @@ internal final class LoginView: UIView {
         termsAndConditions.didTap
     }
     
-    private let mainLabelTitle: String
     private let buttonTitle: String
-    private let mainLabel = UILabel()
     private let usernameTextField = UITextField()
     private let passwordTextField = UITextField()
     private let termsAndConditions = TappableTextView(tappableText: ["terms and conditions"], fullText: "Accept our terms and conditions")
     private let stackView = UIStackView()
     private lazy var loginButton = AccessibleButton(title: buttonTitle, color: .black, titleColor: .white)
     
-    init(mainLabelTitle: String, buttonTitle: String) {
-        self.mainLabelTitle = mainLabelTitle
+    init(buttonTitle: String) {
         self.buttonTitle = buttonTitle
         super.init(frame: .zero)
         
@@ -36,7 +33,6 @@ internal final class LoginView: UIView {
     }
     
     private func setup() {
-        mainLabel.text = mainLabelTitle
         usernameTextField.placeholder = "Username"
         usernameTextField.textContentType = .emailAddress
         passwordTextField.placeholder = "Password"

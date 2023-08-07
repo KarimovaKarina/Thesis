@@ -4,7 +4,7 @@ import Combine
 internal class LoginViewController: UIViewController {
     var subscriptions = Set<AnyCancellable>()
     
-    private let loginView = LoginView(mainLabelTitle: "", buttonTitle: "LOG IN")
+    private let loginView = LoginView(buttonTitle: "LOG IN")
     private let evenSubject = PassthroughSubject<LoginEvent, Never>()
     override func viewDidLoad() {
         super.viewDidLoad()

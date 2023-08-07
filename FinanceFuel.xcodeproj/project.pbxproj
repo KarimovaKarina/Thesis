@@ -46,6 +46,8 @@
 		6E9AF4F62A80CAE9001ED729 /* FinanceFuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9AF4F52A80CAE9001ED729 /* FinanceFuelTests.swift */; };
 		6E9AF5062A80D6C6001ED729 /* libGTXiLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9AF5052A80D6C6001ED729 /* libGTXiLib.a */; };
 		6E9AF5082A80D743001ED729 /* FinanceFuelSources in Frameworks */ = {isa = PBXBuildFile; productRef = 6E9AF5072A80D743001ED729 /* FinanceFuelSources */; };
+		6EC968D72A80F03500D98AAE /* OAT in Frameworks */ = {isa = PBXBuildFile; productRef = 6EC968D62A80F03500D98AAE /* OAT */; };
+		6EC968D92A80F0A300D98AAE /* OATtests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC968D82A80F0A300D98AAE /* OATtests.swift */; };
 		6ED16FF12A6C655D00A49842 /* MoonFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED16FF02A6C655D00A49842 /* MoonFoundation */; };
 		6ED16FF32A6C655D00A49842 /* MoonPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED16FF22A6C655D00A49842 /* MoonPresentation */; };
 		6ED16FF52A6C655D00A49842 /* Moonlight in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED16FF42A6C655D00A49842 /* Moonlight */; };
@@ -78,6 +80,7 @@
 		6E9AF5032A80D619001ED729 /* FinanceFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9AF5042A80D619001ED729 /* FinanceFuelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceFuelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9AF5052A80D6C6001ED729 /* libGTXiLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGTXiLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC968D82A80F0A300D98AAE /* OATtests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OATtests.swift; sourceTree = "<group>"; };
 		C0DE182CBD92A8D7E20F8A02 /* Pods-FinanceFuelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceFuelTests.release.xcconfig"; path = "Target Support Files/Pods-FinanceFuelTests/Pods-FinanceFuelTests.release.xcconfig"; sourceTree = "<group>"; };
 		D548CEA3931CDE6C755E46DD /* libPods-FinanceFuelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinanceFuelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,6 +132,7 @@
 				6E9AF5062A80D6C6001ED729 /* libGTXiLib.a in Frameworks */,
 				DD36B629090756780C4619FF /* libPods-FinanceFuelTests.a in Frameworks */,
 				6E9AF5082A80D743001ED729 /* FinanceFuelSources in Frameworks */,
+				6EC968D72A80F03500D98AAE /* OAT in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				6E9AF4F52A80CAE9001ED729 /* FinanceFuelTests.swift */,
+				6EC968D82A80F0A300D98AAE /* OATtests.swift */,
 			);
 			path = FinanceFuelTests;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			name = FinanceFuelTests;
 			packageProductDependencies = (
 				6E9AF5072A80D743001ED729 /* FinanceFuelSources */,
+				6EC968D62A80F03500D98AAE /* OAT */,
 			);
 			productName = FinanceFuelTests;
 			productReference = 6E9AF5042A80D619001ED729 /* FinanceFuelTests.xctest */;
@@ -388,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC968D92A80F0A300D98AAE /* OATtests.swift in Sources */,
 				6E9AF4F62A80CAE9001ED729 /* FinanceFuelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,6 +833,10 @@
 		6E9AF5072A80D743001ED729 /* FinanceFuelSources */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FinanceFuelSources;
+		};
+		6EC968D62A80F03500D98AAE /* OAT */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OAT;
 		};
 		6ED16FF02A6C655D00A49842 /* MoonFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
