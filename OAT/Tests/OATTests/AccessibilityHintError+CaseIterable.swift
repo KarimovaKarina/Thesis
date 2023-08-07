@@ -4,7 +4,7 @@ extension AccessibilityHintError: CaseIterable {
     public static var allCases: [AccessibilityHintError] {
         [
             .hintIsEmpty,
-            .containsLabel,
+            .containsLabel("Log in"),
             .containsType(["button"]),
             .doesNotEndsWithPeriod,
             .firstWordIsNotCapitalized

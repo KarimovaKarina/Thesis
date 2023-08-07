@@ -1,8 +1,77 @@
 import UIKit
 
-extension UIAccessibilityTraits {
+extension UIAccessibilityTraits: CaseIterable {
+    public static var allCases: [UIAccessibilityTraits] {
+        [.none, .button, .link, .searchField, .image, .selected, .playsSound,
+         .keyboardKey, .staticText, .summaryElement, .notEnabled, .updatesFrequently,
+        .startsMediaSession, .adjustable, .allowsDirectInteraction, .causesPageTurn,
+         .header, .tabBar
+        ]
+    }
+    
     static var mutuallyExclusiveTraits: [UIAccessibilityTraits] {
         [.button, .searchField, .link, .keyboardKey]
+    }
+    
+    var modifiedStringValue: String? {
+        switch self {
+        case .none:
+            return "none"
+            
+        case .button:
+            return "button"
+            
+        case .link:
+            return "link"
+            
+        case .searchField:
+            return "search field"
+            
+        case .image:
+            return "image"
+            
+        case .selected:
+            return "selected"
+            
+        case .playsSound:
+            return "plays sound"
+            
+        case .keyboardKey:
+            return "keyboard key"
+            
+        case .staticText:
+            return "static text"
+            
+        case .summaryElement:
+            return "summary element"
+            
+        case .notEnabled:
+            return "not enabled"
+            
+        case .updatesFrequently:
+            return "updates frequently"
+            
+        case .startsMediaSession:
+            return "starts media session"
+            
+        case .adjustable:
+            return "adjustable"
+            
+        case .allowsDirectInteraction:
+            return "allows direct interaction"
+            
+        case .causesPageTurn:
+            return "causes page turn"
+            
+        case .header:
+            return "header"
+            
+        case .tabBar:
+            return "tab bar"
+            
+        default:
+            return nil
+        }
     }
     
     var stringValue: String {

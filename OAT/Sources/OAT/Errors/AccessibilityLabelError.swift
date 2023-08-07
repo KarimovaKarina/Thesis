@@ -2,11 +2,11 @@ import UIKit
 
 enum AccessibilityLabelError {
     case labelIsMissing(UIView)
-    case labelIsEmpty
-    case containsType([String])
-    case firstWordIsNotCapitalized
-    case endsWithPeriod
-    case duplicated
+    case labelIsEmpty(UIView)
+    case containsType(UIView, [String])
+    case firstWordIsNotCapitalized(UIView)
+    case endsWithPeriod(UIView)
+    case duplicated(UIView)
 }
 
 extension AccessibilityLabelError: AccessibilityError {
@@ -18,24 +18,41 @@ extension AccessibilityLabelError: AccessibilityError {
             UI element description: \(type.description)
             """
             
-        case .labelIsEmpty:
-            return "accessibilityLabel should not be empty string."
-
-        case let .containsType(stopWords):
-            return "accessibilityLabel should not include the type of the control or view. Please, substitute the following words \(stopWords)."
+        case let .labelIsEmpty(type):
+            return """
+            'accessibilityLabel' should not be empty string.\n
+            UI element description: \(type.description)
+            """
             
-        case .firstWordIsNotCapitalized:
-            return "accessibilityLabel should begin with a capitalized word. This helps VoiceOver read the label with the appropriate inflection."
+        case let .containsType(type, stopWords):
+            return """
+            'accessibilityLabel' should not include the type of the control or view, as it should be set in 'accessibilityTrait'. Please, substitute the following words \(stopWords).\n
+            UI element description: \(type.description)
+            """
             
-        case .endsWithPeriod:
-            return "accessibilityLabel is not a sentence and therefore should not end with a period."
+        case let .firstWordIsNotCapitalized(type):
+            return """
+            accessibilityLabel should begin with a capitalized word. This helps VoiceOver read the label with the appropriate inflection.\n
+            UI element description: \(type.description)
+            """
             
-        case .duplicated:
-            return "Something is duplicated..."
+        case let .endsWithPeriod(type):
+            return """
+            'accessibilityLabel' is not a sentence and therefore should not end with a period.\n
+            UI element description: \(type.description)
+            """
+            
+        case let .duplicated(type):
+            return """
+            'accessibilityLabel' is duplicated.\n
+            UI element description: \(type.description)
+            """
         }
     }
 }
 
 extension AccessibilityLabelError {
-    static var stopWords: [String] = ["button", "label"]
+    static var stopWords: [String] {
+        UIAccessibilityTraits.allCases.compactMap { $0.modifiedStringValue }
+    }
 }

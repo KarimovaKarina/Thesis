@@ -4,8 +4,9 @@ import OAT
 
 final class OATFinanceFuelTests: XCTestCase {
     func testExample() throws {
-        let button = AccessibleButton(title: "Color.", color: .black, titleColor: .black)
+        let button = AccessibleButton(title: "Button link.", color: .black, titleColor: .black)
         button.accessibilityTraits.insert(.link)
+        button.accessibilityHint = "Button opens link."
         button.frame = CGRect(x: 0, y: 0, width: 30, height: 40)
         checkAccessibility(button)
     }

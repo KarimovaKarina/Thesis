@@ -72,7 +72,7 @@ extension UIView {
         if Set(labels).count == labels.count {
             return []
         } else {
-            return [AccessibilityLabelError.duplicated]
+            return [AccessibilityLabelError.duplicated(self)]
         }
     }
 }

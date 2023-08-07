@@ -10,7 +10,7 @@ public func checkAccessibility(
 ) {
     let errors = collectErrors(for: view, with: settings)
     errors.forEach { error in
-        XCTFail(error.errorMessage, file: file, line: line)
+        XCTFail("\n -> " + error.errorMessage, file: file, line: line)
     }
 }
 

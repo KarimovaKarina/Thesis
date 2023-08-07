@@ -23,12 +23,12 @@ extension UIView {
             .filter{ accessibilityHint.lowercased().contains($0) }
         
         if !stopWords.isEmpty {
-            errors.append(AccessibilityLabelError.containsType(stopWords))
+            errors.append(AccessibilityHintError.containsType(stopWords))
         }
         
         if let label = self.actualAccessibilityLabel {
             if accessibilityHint.contains(label + " ") {
-                errors.append(AccessibilityHintError.containsLabel)
+                errors.append(AccessibilityHintError.containsLabel(label))
             }
         }
         
