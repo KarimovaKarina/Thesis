@@ -72,7 +72,7 @@ final class FinanceFuelSourcesTests: XCTestCase {
     }
     
     func testHierarchy() {
-        let view = LoginView(mainLabelTitle: "Ola", buttonTitle: "Ola-la")
+        let view = LoginView(buttonTitle: "Ola-la")
         checkAccessibility(view)
     }
     

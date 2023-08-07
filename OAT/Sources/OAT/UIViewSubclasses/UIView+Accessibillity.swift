@@ -21,6 +21,7 @@ extension UIView: AccessibilityCheckable {
         errors += checkAccessiblityLabel()
         errors += checkAccessibilityHint()
         errors += checkSubclasses()
+        errors += checkTraitsConflict()
         
         return errors
     }
@@ -41,6 +42,20 @@ extension UIView: AccessibilityCheckable {
         }
         
         return errors
+    }
+    
+    private func checkTraitsConflict() -> [any AccessibilityError] {
+        var exclusiveTraits: [UIAccessibilityTraits] = []
+        UIAccessibilityTraits.mutuallyExclusiveTraits.forEach { trait in
+            if self.accessibilityTraits.contains(trait) {
+                exclusiveTraits.append(trait)
+            }
+        }
+        if exclusiveTraits.count <= 1 {
+            return []
+        } else {
+            return [AccessibilityTraitError.traitsConflict(self, exclusiveTraits)]
+        }
     }
 }
 
