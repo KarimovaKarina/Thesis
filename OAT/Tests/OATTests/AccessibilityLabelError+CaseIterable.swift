@@ -5,10 +5,10 @@ extension AccessibilityLabelError: CaseIterable {
     public static var allCases: [AccessibilityLabelError] {
         [
             .labelIsMissing(UIView()),
-            .labelIsEmpty,
-            .firstWordIsNotCapitalized,
-            .endsWithPeriod,
-            .containsType(["button"])
+            .labelIsEmpty(UIView()),
+            .firstWordIsNotCapitalized(UIView()),
+            .endsWithPeriod(UIView()),
+            .containsType((UIView()), ["button"])
         ]
     }
 }
