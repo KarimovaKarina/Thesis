@@ -1,0 +1,1 @@
+../../../GTXiLib/OOPClasses/Protos/check_result_clustering.h

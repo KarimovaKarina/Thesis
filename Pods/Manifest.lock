@@ -1,0 +1,1240 @@
+PODS:
+  - abseil (1.20230125.3):
+    - abseil/algorithm (= 1.20230125.3)
+    - abseil/base (= 1.20230125.3)
+    - abseil/cleanup (= 1.20230125.3)
+    - abseil/container (= 1.20230125.3)
+    - abseil/crc (= 1.20230125.3)
+    - abseil/debugging (= 1.20230125.3)
+    - abseil/flags (= 1.20230125.3)
+    - abseil/functional (= 1.20230125.3)
+    - abseil/hash (= 1.20230125.3)
+    - abseil/log (= 1.20230125.3)
+    - abseil/memory (= 1.20230125.3)
+    - abseil/meta (= 1.20230125.3)
+    - abseil/numeric (= 1.20230125.3)
+    - abseil/profiling (= 1.20230125.3)
+    - abseil/random (= 1.20230125.3)
+    - abseil/status (= 1.20230125.3)
+    - abseil/strings (= 1.20230125.3)
+    - abseil/synchronization (= 1.20230125.3)
+    - abseil/time (= 1.20230125.3)
+    - abseil/types (= 1.20230125.3)
+    - abseil/utility (= 1.20230125.3)
+  - abseil/algorithm (1.20230125.3):
+    - abseil/algorithm/algorithm (= 1.20230125.3)
+    - abseil/algorithm/container (= 1.20230125.3)
+  - abseil/algorithm/algorithm (1.20230125.3):
+    - abseil/base/config
+  - abseil/algorithm/container (1.20230125.3):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/base (1.20230125.3):
+    - abseil/base/atomic_hook (= 1.20230125.3)
+    - abseil/base/base (= 1.20230125.3)
+    - abseil/base/base_internal (= 1.20230125.3)
+    - abseil/base/config (= 1.20230125.3)
+    - abseil/base/core_headers (= 1.20230125.3)
+    - abseil/base/cycleclock_internal (= 1.20230125.3)
+    - abseil/base/dynamic_annotations (= 1.20230125.3)
+    - abseil/base/endian (= 1.20230125.3)
+    - abseil/base/errno_saver (= 1.20230125.3)
+    - abseil/base/fast_type_id (= 1.20230125.3)
+    - abseil/base/log_severity (= 1.20230125.3)
+    - abseil/base/malloc_internal (= 1.20230125.3)
+    - abseil/base/prefetch (= 1.20230125.3)
+    - abseil/base/pretty_function (= 1.20230125.3)
+    - abseil/base/raw_logging_internal (= 1.20230125.3)
+    - abseil/base/spinlock_wait (= 1.20230125.3)
+    - abseil/base/strerror (= 1.20230125.3)
+    - abseil/base/throw_delegate (= 1.20230125.3)
+  - abseil/base/atomic_hook (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/base (1.20230125.3):
+    - abseil/base/atomic_hook
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/cycleclock_internal
+    - abseil/base/dynamic_annotations
+    - abseil/base/log_severity
+    - abseil/base/raw_logging_internal
+    - abseil/base/spinlock_wait
+    - abseil/meta/type_traits
+  - abseil/base/base_internal (1.20230125.3):
+    - abseil/base/config
+    - abseil/meta/type_traits
+  - abseil/base/config (1.20230125.3)
+  - abseil/base/core_headers (1.20230125.3):
+    - abseil/base/config
+  - abseil/base/cycleclock_internal (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/config
+  - abseil/base/dynamic_annotations (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/endian (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/errno_saver (1.20230125.3):
+    - abseil/base/config
+  - abseil/base/fast_type_id (1.20230125.3):
+    - abseil/base/config
+  - abseil/base/log_severity (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/malloc_internal (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/raw_logging_internal
+  - abseil/base/prefetch (1.20230125.3):
+    - abseil/base/config
+  - abseil/base/pretty_function (1.20230125.3)
+  - abseil/base/raw_logging_internal (1.20230125.3):
+    - abseil/base/atomic_hook
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/errno_saver
+    - abseil/base/log_severity
+  - abseil/base/spinlock_wait (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/core_headers
+    - abseil/base/errno_saver
+  - abseil/base/strerror (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/errno_saver
+  - abseil/base/throw_delegate (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/cleanup (1.20230125.3):
+    - abseil/cleanup/cleanup (= 1.20230125.3)
+    - abseil/cleanup/cleanup_internal (= 1.20230125.3)
+  - abseil/cleanup/cleanup (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/cleanup/cleanup_internal
+  - abseil/cleanup/cleanup_internal (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/core_headers
+    - abseil/utility/utility
+  - abseil/container (1.20230125.3):
+    - abseil/container/btree (= 1.20230125.3)
+    - abseil/container/common (= 1.20230125.3)
+    - abseil/container/common_policy_traits (= 1.20230125.3)
+    - abseil/container/compressed_tuple (= 1.20230125.3)
+    - abseil/container/container_memory (= 1.20230125.3)
+    - abseil/container/fixed_array (= 1.20230125.3)
+    - abseil/container/flat_hash_map (= 1.20230125.3)
+    - abseil/container/flat_hash_set (= 1.20230125.3)
+    - abseil/container/hash_function_defaults (= 1.20230125.3)
+    - abseil/container/hash_policy_traits (= 1.20230125.3)
+    - abseil/container/hashtable_debug (= 1.20230125.3)
+    - abseil/container/hashtable_debug_hooks (= 1.20230125.3)
+    - abseil/container/hashtablez_sampler (= 1.20230125.3)
+    - abseil/container/inlined_vector (= 1.20230125.3)
+    - abseil/container/inlined_vector_internal (= 1.20230125.3)
+    - abseil/container/layout (= 1.20230125.3)
+    - abseil/container/node_hash_map (= 1.20230125.3)
+    - abseil/container/node_hash_set (= 1.20230125.3)
+    - abseil/container/node_slot_policy (= 1.20230125.3)
+    - abseil/container/raw_hash_map (= 1.20230125.3)
+    - abseil/container/raw_hash_set (= 1.20230125.3)
+  - abseil/container/btree (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/base/throw_delegate
+    - abseil/container/common
+    - abseil/container/common_policy_traits
+    - abseil/container/compressed_tuple
+    - abseil/container/container_memory
+    - abseil/container/layout
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/strings/cord
+    - abseil/strings/strings
+    - abseil/types/compare
+    - abseil/utility/utility
+  - abseil/container/common (1.20230125.3):
+    - abseil/meta/type_traits
+    - abseil/types/optional
+  - abseil/container/common_policy_traits (1.20230125.3):
+    - abseil/meta/type_traits
+  - abseil/container/compressed_tuple (1.20230125.3):
+    - abseil/utility/utility
+  - abseil/container/container_memory (1.20230125.3):
+    - abseil/base/config
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/utility/utility
+  - abseil/container/fixed_array (1.20230125.3):
+    - abseil/algorithm/algorithm
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/throw_delegate
+    - abseil/container/compressed_tuple
+    - abseil/memory/memory
+  - abseil/container/flat_hash_map (1.20230125.3):
+    - abseil/algorithm/container
+    - abseil/base/core_headers
+    - abseil/container/container_memory
+    - abseil/container/hash_function_defaults
+    - abseil/container/raw_hash_map
+    - abseil/memory/memory
+  - abseil/container/flat_hash_set (1.20230125.3):
+    - abseil/algorithm/container
+    - abseil/base/core_headers
+    - abseil/container/container_memory
+    - abseil/container/hash_function_defaults
+    - abseil/container/raw_hash_set
+    - abseil/memory/memory
+  - abseil/container/hash_function_defaults (1.20230125.3):
+    - abseil/base/config
+    - abseil/hash/hash
+    - abseil/strings/cord
+    - abseil/strings/strings
+  - abseil/container/hash_policy_traits (1.20230125.3):
+    - abseil/container/common_policy_traits
+    - abseil/meta/type_traits
+  - abseil/container/hashtable_debug (1.20230125.3):
+    - abseil/container/hashtable_debug_hooks
+  - abseil/container/hashtable_debug_hooks (1.20230125.3):
+    - abseil/base/config
+  - abseil/container/hashtablez_sampler (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/debugging/stacktrace
+    - abseil/memory/memory
+    - abseil/profiling/exponential_biased
+    - abseil/profiling/sample_recorder
+    - abseil/synchronization/synchronization
+    - abseil/utility/utility
+  - abseil/container/inlined_vector (1.20230125.3):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/container/inlined_vector_internal
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+  - abseil/container/inlined_vector_internal (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/container/compressed_tuple
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/span
+  - abseil/container/layout (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/strings/strings
+    - abseil/types/span
+    - abseil/utility/utility
+  - abseil/container/node_hash_map (1.20230125.3):
+    - abseil/algorithm/container
+    - abseil/base/core_headers
+    - abseil/container/container_memory
+    - abseil/container/hash_function_defaults
+    - abseil/container/node_slot_policy
+    - abseil/container/raw_hash_map
+    - abseil/memory/memory
+  - abseil/container/node_hash_set (1.20230125.3):
+    - abseil/algorithm/container
+    - abseil/base/core_headers
+    - abseil/container/hash_function_defaults
+    - abseil/container/node_slot_policy
+    - abseil/container/raw_hash_set
+    - abseil/memory/memory
+  - abseil/container/node_slot_policy (1.20230125.3):
+    - abseil/base/config
+  - abseil/container/raw_hash_map (1.20230125.3):
+    - abseil/base/throw_delegate
+    - abseil/container/container_memory
+    - abseil/container/raw_hash_set
+  - abseil/container/raw_hash_set (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/prefetch
+    - abseil/base/raw_logging_internal
+    - abseil/container/common
+    - abseil/container/compressed_tuple
+    - abseil/container/container_memory
+    - abseil/container/hash_policy_traits
+    - abseil/container/hashtable_debug_hooks
+    - abseil/container/hashtablez_sampler
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/numeric/bits
+    - abseil/utility/utility
+  - abseil/crc (1.20230125.3):
+    - abseil/crc/cpu_detect (= 1.20230125.3)
+    - abseil/crc/crc32c (= 1.20230125.3)
+    - abseil/crc/crc_cord_state (= 1.20230125.3)
+    - abseil/crc/crc_internal (= 1.20230125.3)
+    - abseil/crc/non_temporal_arm_intrinsics (= 1.20230125.3)
+    - abseil/crc/non_temporal_memcpy (= 1.20230125.3)
+  - abseil/crc/cpu_detect (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+  - abseil/crc/crc32c (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/endian
+    - abseil/base/prefetch
+    - abseil/crc/cpu_detect
+    - abseil/crc/crc_internal
+    - abseil/crc/non_temporal_memcpy
+    - abseil/strings/strings
+  - abseil/crc/crc_cord_state (1.20230125.3):
+    - abseil/base/config
+    - abseil/crc/crc32c
+    - abseil/numeric/bits
+    - abseil/strings/strings
+  - abseil/crc/crc_internal (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/endian
+    - abseil/base/prefetch
+    - abseil/base/raw_logging_internal
+    - abseil/crc/cpu_detect
+    - abseil/memory/memory
+    - abseil/numeric/bits
+  - abseil/crc/non_temporal_arm_intrinsics (1.20230125.3):
+    - abseil/base/config
+  - abseil/crc/non_temporal_memcpy (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/crc/non_temporal_arm_intrinsics
+  - abseil/debugging (1.20230125.3):
+    - abseil/debugging/debugging_internal (= 1.20230125.3)
+    - abseil/debugging/demangle_internal (= 1.20230125.3)
+    - abseil/debugging/examine_stack (= 1.20230125.3)
+    - abseil/debugging/failure_signal_handler (= 1.20230125.3)
+    - abseil/debugging/leak_check (= 1.20230125.3)
+    - abseil/debugging/stacktrace (= 1.20230125.3)
+    - abseil/debugging/symbolize (= 1.20230125.3)
+  - abseil/debugging/debugging_internal (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/errno_saver
+    - abseil/base/raw_logging_internal
+  - abseil/debugging/demangle_internal (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/debugging/examine_stack (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/debugging/stacktrace
+    - abseil/debugging/symbolize
+  - abseil/debugging/failure_signal_handler (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/debugging/examine_stack
+    - abseil/debugging/stacktrace
+  - abseil/debugging/leak_check (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/debugging/stacktrace (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/debugging/debugging_internal
+  - abseil/debugging/symbolize (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/malloc_internal
+    - abseil/base/raw_logging_internal
+    - abseil/debugging/debugging_internal
+    - abseil/debugging/demangle_internal
+    - abseil/strings/strings
+  - abseil/flags (1.20230125.3):
+    - abseil/flags/commandlineflag (= 1.20230125.3)
+    - abseil/flags/commandlineflag_internal (= 1.20230125.3)
+    - abseil/flags/config (= 1.20230125.3)
+    - abseil/flags/flag (= 1.20230125.3)
+    - abseil/flags/flag_internal (= 1.20230125.3)
+    - abseil/flags/marshalling (= 1.20230125.3)
+    - abseil/flags/parse (= 1.20230125.3)
+    - abseil/flags/path_util (= 1.20230125.3)
+    - abseil/flags/private_handle_accessor (= 1.20230125.3)
+    - abseil/flags/program_name (= 1.20230125.3)
+    - abseil/flags/reflection (= 1.20230125.3)
+    - abseil/flags/usage (= 1.20230125.3)
+    - abseil/flags/usage_internal (= 1.20230125.3)
+  - abseil/flags/commandlineflag (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/fast_type_id
+    - abseil/flags/commandlineflag_internal
+    - abseil/strings/strings
+    - abseil/types/optional
+  - abseil/flags/commandlineflag_internal (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/fast_type_id
+  - abseil/flags/config (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/flags/path_util
+    - abseil/flags/program_name
+    - abseil/strings/strings
+    - abseil/synchronization/synchronization
+  - abseil/flags/flag (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/flags/config
+    - abseil/flags/flag_internal
+    - abseil/flags/reflection
+    - abseil/strings/strings
+  - abseil/flags/flag_internal (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/flags/commandlineflag
+    - abseil/flags/commandlineflag_internal
+    - abseil/flags/config
+    - abseil/flags/marshalling
+    - abseil/flags/reflection
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/strings/strings
+    - abseil/synchronization/synchronization
+    - abseil/utility/utility
+  - abseil/flags/marshalling (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+    - abseil/strings/str_format
+    - abseil/strings/strings
+    - abseil/types/optional
+  - abseil/flags/parse (1.20230125.3):
+    - abseil/algorithm/container
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/flags/commandlineflag
+    - abseil/flags/commandlineflag_internal
+    - abseil/flags/config
+    - abseil/flags/flag
+    - abseil/flags/flag_internal
+    - abseil/flags/private_handle_accessor
+    - abseil/flags/program_name
+    - abseil/flags/reflection
+    - abseil/flags/usage
+    - abseil/flags/usage_internal
+    - abseil/strings/strings
+    - abseil/synchronization/synchronization
+  - abseil/flags/path_util (1.20230125.3):
+    - abseil/base/config
+    - abseil/strings/strings
+  - abseil/flags/private_handle_accessor (1.20230125.3):
+    - abseil/base/config
+    - abseil/flags/commandlineflag
+    - abseil/flags/commandlineflag_internal
+    - abseil/strings/strings
+  - abseil/flags/program_name (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/flags/path_util
+    - abseil/strings/strings
+    - abseil/synchronization/synchronization
+  - abseil/flags/reflection (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/container/flat_hash_map
+    - abseil/flags/commandlineflag
+    - abseil/flags/commandlineflag_internal
+    - abseil/flags/config
+    - abseil/flags/private_handle_accessor
+    - abseil/strings/strings
+    - abseil/synchronization/synchronization
+  - abseil/flags/usage (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/flags/usage_internal
+    - abseil/strings/strings
+    - abseil/synchronization/synchronization
+  - abseil/flags/usage_internal (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/container/flat_hash_map
+    - abseil/flags/commandlineflag
+    - abseil/flags/config
+    - abseil/flags/flag
+    - abseil/flags/flag_internal
+    - abseil/flags/path_util
+    - abseil/flags/private_handle_accessor
+    - abseil/flags/program_name
+    - abseil/flags/reflection
+    - abseil/strings/strings
+  - abseil/functional (1.20230125.3):
+    - abseil/functional/any_invocable (= 1.20230125.3)
+    - abseil/functional/bind_front (= 1.20230125.3)
+    - abseil/functional/function_ref (= 1.20230125.3)
+  - abseil/functional/any_invocable (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/utility/utility
+  - abseil/functional/bind_front (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/container/compressed_tuple
+    - abseil/meta/type_traits
+    - abseil/utility/utility
+  - abseil/functional/function_ref (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/hash (1.20230125.3):
+    - abseil/hash/city (= 1.20230125.3)
+    - abseil/hash/hash (= 1.20230125.3)
+    - abseil/hash/low_level_hash (= 1.20230125.3)
+  - abseil/hash/city (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+  - abseil/hash/hash (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/container/fixed_array
+    - abseil/functional/function_ref
+    - abseil/hash/city
+    - abseil/hash/low_level_hash
+    - abseil/meta/type_traits
+    - abseil/numeric/bits
+    - abseil/numeric/int128
+    - abseil/strings/strings
+    - abseil/types/optional
+    - abseil/types/variant
+    - abseil/utility/utility
+  - abseil/hash/low_level_hash (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/endian
+    - abseil/numeric/int128
+  - abseil/log (1.20230125.3):
+    - abseil/log/absl_check (= 1.20230125.3)
+    - abseil/log/absl_log (= 1.20230125.3)
+    - abseil/log/check (= 1.20230125.3)
+    - abseil/log/die_if_null (= 1.20230125.3)
+    - abseil/log/flags (= 1.20230125.3)
+    - abseil/log/globals (= 1.20230125.3)
+    - abseil/log/initialize (= 1.20230125.3)
+    - abseil/log/internal (= 1.20230125.3)
+    - abseil/log/log (= 1.20230125.3)
+    - abseil/log/log_entry (= 1.20230125.3)
+    - abseil/log/log_sink (= 1.20230125.3)
+    - abseil/log/log_sink_registry (= 1.20230125.3)
+    - abseil/log/log_streamer (= 1.20230125.3)
+    - abseil/log/structured (= 1.20230125.3)
+  - abseil/log/absl_check (1.20230125.3):
+    - abseil/log/internal/check_impl
+  - abseil/log/absl_log (1.20230125.3):
+    - abseil/log/internal/log_impl
+  - abseil/log/check (1.20230125.3):
+    - abseil/log/internal/check_impl
+    - abseil/log/internal/check_op
+    - abseil/log/internal/conditions
+    - abseil/log/internal/log_message
+    - abseil/log/internal/strip
+  - abseil/log/die_if_null (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/log/log
+    - abseil/strings/strings
+  - abseil/log/flags (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+    - abseil/flags/flag
+    - abseil/flags/marshalling
+    - abseil/log/globals
+    - abseil/log/internal/config
+    - abseil/log/internal/flags
+    - abseil/strings/strings
+  - abseil/log/globals (1.20230125.3):
+    - abseil/base/atomic_hook
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+    - abseil/hash/hash
+    - abseil/strings/strings
+  - abseil/log/initialize (1.20230125.3):
+    - abseil/base/config
+    - abseil/log/globals
+    - abseil/log/internal/globals
+    - abseil/time/time
+  - abseil/log/internal (1.20230125.3):
+    - abseil/log/internal/append_truncated (= 1.20230125.3)
+    - abseil/log/internal/check_impl (= 1.20230125.3)
+    - abseil/log/internal/check_op (= 1.20230125.3)
+    - abseil/log/internal/conditions (= 1.20230125.3)
+    - abseil/log/internal/config (= 1.20230125.3)
+    - abseil/log/internal/flags (= 1.20230125.3)
+    - abseil/log/internal/format (= 1.20230125.3)
+    - abseil/log/internal/globals (= 1.20230125.3)
+    - abseil/log/internal/log_impl (= 1.20230125.3)
+    - abseil/log/internal/log_message (= 1.20230125.3)
+    - abseil/log/internal/log_sink_set (= 1.20230125.3)
+    - abseil/log/internal/nullguard (= 1.20230125.3)
+    - abseil/log/internal/nullstream (= 1.20230125.3)
+    - abseil/log/internal/proto (= 1.20230125.3)
+    - abseil/log/internal/strip (= 1.20230125.3)
+    - abseil/log/internal/structured (= 1.20230125.3)
+    - abseil/log/internal/voidify (= 1.20230125.3)
+  - abseil/log/internal/append_truncated (1.20230125.3):
+    - abseil/base/config
+    - abseil/strings/strings
+    - abseil/types/span
+  - abseil/log/internal/check_impl (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/log/internal/check_op
+    - abseil/log/internal/conditions
+    - abseil/log/internal/log_message
+    - abseil/log/internal/strip
+  - abseil/log/internal/check_op (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/log/internal/nullguard
+    - abseil/log/internal/nullstream
+    - abseil/log/internal/strip
+    - abseil/strings/strings
+  - abseil/log/internal/conditions (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/log/internal/voidify
+  - abseil/log/internal/config (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/log/internal/flags (1.20230125.3):
+    - abseil/flags/flag
+  - abseil/log/internal/format (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+    - abseil/log/internal/append_truncated
+    - abseil/log/internal/config
+    - abseil/log/internal/globals
+    - abseil/strings/str_format
+    - abseil/strings/strings
+    - abseil/time/time
+    - abseil/types/span
+  - abseil/log/internal/globals (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+    - abseil/base/raw_logging_internal
+    - abseil/strings/strings
+    - abseil/time/time
+  - abseil/log/internal/log_impl (1.20230125.3):
+    - abseil/log/internal/conditions
+    - abseil/log/internal/log_message
+    - abseil/log/internal/strip
+  - abseil/log/internal/log_message (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/errno_saver
+    - abseil/base/log_severity
+    - abseil/base/raw_logging_internal
+    - abseil/base/strerror
+    - abseil/container/inlined_vector
+    - abseil/debugging/examine_stack
+    - abseil/log/globals
+    - abseil/log/internal/append_truncated
+    - abseil/log/internal/format
+    - abseil/log/internal/globals
+    - abseil/log/internal/log_sink_set
+    - abseil/log/internal/nullguard
+    - abseil/log/internal/proto
+    - abseil/log/log_entry
+    - abseil/log/log_sink
+    - abseil/log/log_sink_registry
+    - abseil/memory/memory
+    - abseil/strings/strings
+    - abseil/time/time
+    - abseil/types/span
+  - abseil/log/internal/log_sink_set (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+    - abseil/base/raw_logging_internal
+    - abseil/cleanup/cleanup
+    - abseil/log/globals
+    - abseil/log/internal/config
+    - abseil/log/internal/globals
+    - abseil/log/log_entry
+    - abseil/log/log_sink
+    - abseil/strings/strings
+    - abseil/synchronization/synchronization
+    - abseil/types/span
+  - abseil/log/internal/nullguard (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/log/internal/nullstream (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+    - abseil/strings/strings
+  - abseil/log/internal/proto (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/strings/strings
+    - abseil/types/span
+  - abseil/log/internal/strip (1.20230125.3):
+    - abseil/base/log_severity
+    - abseil/log/internal/log_message
+    - abseil/log/internal/nullstream
+  - abseil/log/internal/structured (1.20230125.3):
+    - abseil/base/config
+    - abseil/log/internal/log_message
+    - abseil/strings/strings
+  - abseil/log/internal/voidify (1.20230125.3):
+    - abseil/base/config
+  - abseil/log/log (1.20230125.3):
+    - abseil/log/internal/log_impl
+  - abseil/log/log_entry (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+    - abseil/log/internal/config
+    - abseil/strings/strings
+    - abseil/time/time
+    - abseil/types/span
+  - abseil/log/log_sink (1.20230125.3):
+    - abseil/base/config
+    - abseil/log/log_entry
+  - abseil/log/log_sink_registry (1.20230125.3):
+    - abseil/base/config
+    - abseil/log/internal/log_sink_set
+    - abseil/log/log_sink
+  - abseil/log/log_streamer (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/log_severity
+    - abseil/log/absl_log
+    - abseil/strings/internal
+    - abseil/strings/strings
+    - abseil/types/optional
+    - abseil/utility/utility
+  - abseil/log/structured (1.20230125.3):
+    - abseil/base/config
+    - abseil/log/internal/structured
+    - abseil/strings/strings
+  - abseil/memory (1.20230125.3):
+    - abseil/memory/memory (= 1.20230125.3)
+  - abseil/memory/memory (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/meta (1.20230125.3):
+    - abseil/meta/type_traits (= 1.20230125.3)
+  - abseil/meta/type_traits (1.20230125.3):
+    - abseil/base/config
+  - abseil/numeric (1.20230125.3):
+    - abseil/numeric/bits (= 1.20230125.3)
+    - abseil/numeric/int128 (= 1.20230125.3)
+    - abseil/numeric/representation (= 1.20230125.3)
+  - abseil/numeric/bits (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/numeric/int128 (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/numeric/bits
+  - abseil/numeric/representation (1.20230125.3):
+    - abseil/base/config
+  - abseil/profiling (1.20230125.3):
+    - abseil/profiling/exponential_biased (= 1.20230125.3)
+    - abseil/profiling/periodic_sampler (= 1.20230125.3)
+    - abseil/profiling/sample_recorder (= 1.20230125.3)
+  - abseil/profiling/exponential_biased (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/profiling/periodic_sampler (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/profiling/exponential_biased
+  - abseil/profiling/sample_recorder (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/synchronization/synchronization
+    - abseil/time/time
+  - abseil/random (1.20230125.3):
+    - abseil/random/bit_gen_ref (= 1.20230125.3)
+    - abseil/random/distributions (= 1.20230125.3)
+    - abseil/random/internal (= 1.20230125.3)
+    - abseil/random/random (= 1.20230125.3)
+    - abseil/random/seed_gen_exception (= 1.20230125.3)
+    - abseil/random/seed_sequences (= 1.20230125.3)
+  - abseil/random/bit_gen_ref (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/base/fast_type_id
+    - abseil/meta/type_traits
+    - abseil/random/internal/distribution_caller
+    - abseil/random/internal/fast_uniform_bits
+    - abseil/random/random
+  - abseil/random/distributions (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/numeric/bits
+    - abseil/random/internal/distribution_caller
+    - abseil/random/internal/fast_uniform_bits
+    - abseil/random/internal/fastmath
+    - abseil/random/internal/generate_real
+    - abseil/random/internal/iostream_state_saver
+    - abseil/random/internal/traits
+    - abseil/random/internal/uniform_helper
+    - abseil/random/internal/wide_multiply
+    - abseil/strings/strings
+  - abseil/random/internal (1.20230125.3):
+    - abseil/random/internal/distribution_caller (= 1.20230125.3)
+    - abseil/random/internal/fast_uniform_bits (= 1.20230125.3)
+    - abseil/random/internal/fastmath (= 1.20230125.3)
+    - abseil/random/internal/generate_real (= 1.20230125.3)
+    - abseil/random/internal/iostream_state_saver (= 1.20230125.3)
+    - abseil/random/internal/mock_helpers (= 1.20230125.3)
+    - abseil/random/internal/nanobenchmark (= 1.20230125.3)
+    - abseil/random/internal/nonsecure_base (= 1.20230125.3)
+    - abseil/random/internal/pcg_engine (= 1.20230125.3)
+    - abseil/random/internal/platform (= 1.20230125.3)
+    - abseil/random/internal/pool_urbg (= 1.20230125.3)
+    - abseil/random/internal/randen (= 1.20230125.3)
+    - abseil/random/internal/randen_engine (= 1.20230125.3)
+    - abseil/random/internal/randen_hwaes (= 1.20230125.3)
+    - abseil/random/internal/randen_hwaes_impl (= 1.20230125.3)
+    - abseil/random/internal/randen_slow (= 1.20230125.3)
+    - abseil/random/internal/salted_seed_seq (= 1.20230125.3)
+    - abseil/random/internal/seed_material (= 1.20230125.3)
+    - abseil/random/internal/traits (= 1.20230125.3)
+    - abseil/random/internal/uniform_helper (= 1.20230125.3)
+    - abseil/random/internal/wide_multiply (= 1.20230125.3)
+  - abseil/random/internal/distribution_caller (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/fast_type_id
+    - abseil/utility/utility
+  - abseil/random/internal/fast_uniform_bits (1.20230125.3):
+    - abseil/base/config
+    - abseil/meta/type_traits
+    - abseil/random/internal/traits
+  - abseil/random/internal/fastmath (1.20230125.3):
+    - abseil/numeric/bits
+  - abseil/random/internal/generate_real (1.20230125.3):
+    - abseil/meta/type_traits
+    - abseil/numeric/bits
+    - abseil/random/internal/fastmath
+    - abseil/random/internal/traits
+  - abseil/random/internal/iostream_state_saver (1.20230125.3):
+    - abseil/meta/type_traits
+    - abseil/numeric/int128
+  - abseil/random/internal/mock_helpers (1.20230125.3):
+    - abseil/base/fast_type_id
+    - abseil/types/optional
+  - abseil/random/internal/nanobenchmark (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/random/internal/platform
+    - abseil/random/internal/randen_engine
+  - abseil/random/internal/nonsecure_base (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/container/inlined_vector
+    - abseil/meta/type_traits
+    - abseil/random/internal/pool_urbg
+    - abseil/random/internal/salted_seed_seq
+    - abseil/random/internal/seed_material
+    - abseil/types/span
+  - abseil/random/internal/pcg_engine (1.20230125.3):
+    - abseil/base/config
+    - abseil/meta/type_traits
+    - abseil/numeric/bits
+    - abseil/numeric/int128
+    - abseil/random/internal/fastmath
+    - abseil/random/internal/iostream_state_saver
+  - abseil/random/internal/platform (1.20230125.3):
+    - abseil/base/config
+  - abseil/random/internal/pool_urbg (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/random/internal/randen
+    - abseil/random/internal/seed_material
+    - abseil/random/internal/traits
+    - abseil/random/seed_gen_exception
+    - abseil/types/span
+  - abseil/random/internal/randen (1.20230125.3):
+    - abseil/base/raw_logging_internal
+    - abseil/random/internal/platform
+    - abseil/random/internal/randen_hwaes
+    - abseil/random/internal/randen_slow
+  - abseil/random/internal/randen_engine (1.20230125.3):
+    - abseil/base/endian
+    - abseil/meta/type_traits
+    - abseil/random/internal/iostream_state_saver
+    - abseil/random/internal/randen
+  - abseil/random/internal/randen_hwaes (1.20230125.3):
+    - abseil/base/config
+    - abseil/random/internal/platform
+    - abseil/random/internal/randen_hwaes_impl
+  - abseil/random/internal/randen_hwaes_impl (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/numeric/int128
+    - abseil/random/internal/platform
+  - abseil/random/internal/randen_slow (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/numeric/int128
+    - abseil/random/internal/platform
+  - abseil/random/internal/salted_seed_seq (1.20230125.3):
+    - abseil/container/inlined_vector
+    - abseil/meta/type_traits
+    - abseil/random/internal/seed_material
+    - abseil/types/optional
+    - abseil/types/span
+  - abseil/random/internal/seed_material (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/raw_logging_internal
+    - abseil/random/internal/fast_uniform_bits
+    - abseil/strings/strings
+    - abseil/types/optional
+    - abseil/types/span
+  - abseil/random/internal/traits (1.20230125.3):
+    - abseil/base/config
+    - abseil/numeric/bits
+    - abseil/numeric/int128
+  - abseil/random/internal/uniform_helper (1.20230125.3):
+    - abseil/base/config
+    - abseil/meta/type_traits
+    - abseil/numeric/int128
+    - abseil/random/internal/traits
+  - abseil/random/internal/wide_multiply (1.20230125.3):
+    - abseil/base/config
+    - abseil/numeric/bits
+    - abseil/numeric/int128
+    - abseil/random/internal/traits
+  - abseil/random/random (1.20230125.3):
+    - abseil/random/distributions
+    - abseil/random/internal/nonsecure_base
+    - abseil/random/internal/pcg_engine
+    - abseil/random/internal/pool_urbg
+    - abseil/random/internal/randen_engine
+    - abseil/random/seed_sequences
+  - abseil/random/seed_gen_exception (1.20230125.3):
+    - abseil/base/config
+  - abseil/random/seed_sequences (1.20230125.3):
+    - abseil/base/config
+    - abseil/random/internal/pool_urbg
+    - abseil/random/internal/salted_seed_seq
+    - abseil/random/internal/seed_material
+    - abseil/random/seed_gen_exception
+    - abseil/types/span
+  - abseil/status (1.20230125.3):
+    - abseil/status/status (= 1.20230125.3)
+    - abseil/status/statusor (= 1.20230125.3)
+  - abseil/status/status (1.20230125.3):
+    - abseil/base/atomic_hook
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/base/strerror
+    - abseil/container/inlined_vector
+    - abseil/debugging/stacktrace
+    - abseil/debugging/symbolize
+    - abseil/functional/function_ref
+    - abseil/strings/cord
+    - abseil/strings/str_format
+    - abseil/strings/strings
+    - abseil/types/optional
+  - abseil/status/statusor (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/meta/type_traits
+    - abseil/status/status
+    - abseil/strings/strings
+    - abseil/types/variant
+    - abseil/utility/utility
+  - abseil/strings (1.20230125.3):
+    - abseil/strings/cord (= 1.20230125.3)
+    - abseil/strings/cord_internal (= 1.20230125.3)
+    - abseil/strings/cordz_functions (= 1.20230125.3)
+    - abseil/strings/cordz_handle (= 1.20230125.3)
+    - abseil/strings/cordz_info (= 1.20230125.3)
+    - abseil/strings/cordz_sample_token (= 1.20230125.3)
+    - abseil/strings/cordz_statistics (= 1.20230125.3)
+    - abseil/strings/cordz_update_scope (= 1.20230125.3)
+    - abseil/strings/cordz_update_tracker (= 1.20230125.3)
+    - abseil/strings/internal (= 1.20230125.3)
+    - abseil/strings/str_format (= 1.20230125.3)
+    - abseil/strings/str_format_internal (= 1.20230125.3)
+    - abseil/strings/strings (= 1.20230125.3)
+  - abseil/strings/cord (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/container/fixed_array
+    - abseil/container/inlined_vector
+    - abseil/crc/crc_cord_state
+    - abseil/functional/function_ref
+    - abseil/meta/type_traits
+    - abseil/numeric/bits
+    - abseil/strings/cord_internal
+    - abseil/strings/cordz_functions
+    - abseil/strings/cordz_info
+    - abseil/strings/cordz_statistics
+    - abseil/strings/cordz_update_scope
+    - abseil/strings/cordz_update_tracker
+    - abseil/strings/internal
+    - abseil/strings/str_format
+    - abseil/strings/strings
+    - abseil/types/optional
+    - abseil/types/span
+  - abseil/strings/cord_internal (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/base/throw_delegate
+    - abseil/container/compressed_tuple
+    - abseil/container/container_memory
+    - abseil/container/inlined_vector
+    - abseil/container/layout
+    - abseil/crc/crc_cord_state
+    - abseil/functional/function_ref
+    - abseil/meta/type_traits
+    - abseil/strings/strings
+    - abseil/types/span
+  - abseil/strings/cordz_functions (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/profiling/exponential_biased
+  - abseil/strings/cordz_handle (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+    - abseil/synchronization/synchronization
+  - abseil/strings/cordz_info (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/container/inlined_vector
+    - abseil/debugging/stacktrace
+    - abseil/strings/cord_internal
+    - abseil/strings/cordz_functions
+    - abseil/strings/cordz_handle
+    - abseil/strings/cordz_statistics
+    - abseil/strings/cordz_update_tracker
+    - abseil/synchronization/synchronization
+    - abseil/types/span
+  - abseil/strings/cordz_sample_token (1.20230125.3):
+    - abseil/base/config
+    - abseil/strings/cordz_handle
+    - abseil/strings/cordz_info
+  - abseil/strings/cordz_statistics (1.20230125.3):
+    - abseil/base/config
+    - abseil/strings/cordz_update_tracker
+  - abseil/strings/cordz_update_scope (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/strings/cord_internal
+    - abseil/strings/cordz_info
+    - abseil/strings/cordz_update_tracker
+  - abseil/strings/cordz_update_tracker (1.20230125.3):
+    - abseil/base/config
+  - abseil/strings/internal (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/meta/type_traits
+  - abseil/strings/str_format (1.20230125.3):
+    - abseil/strings/str_format_internal
+  - abseil/strings/str_format_internal (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/functional/function_ref
+    - abseil/meta/type_traits
+    - abseil/numeric/bits
+    - abseil/numeric/int128
+    - abseil/numeric/representation
+    - abseil/strings/strings
+    - abseil/types/optional
+    - abseil/types/span
+    - abseil/utility/utility
+  - abseil/strings/strings (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/base/throw_delegate
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/numeric/bits
+    - abseil/numeric/int128
+    - abseil/strings/internal
+  - abseil/synchronization (1.20230125.3):
+    - abseil/synchronization/graphcycles_internal (= 1.20230125.3)
+    - abseil/synchronization/kernel_timeout_internal (= 1.20230125.3)
+    - abseil/synchronization/synchronization (= 1.20230125.3)
+  - abseil/synchronization/graphcycles_internal (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/malloc_internal
+    - abseil/base/raw_logging_internal
+  - abseil/synchronization/kernel_timeout_internal (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/time/time
+  - abseil/synchronization/synchronization (1.20230125.3):
+    - abseil/base/atomic_hook
+    - abseil/base/base
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/malloc_internal
+    - abseil/base/raw_logging_internal
+    - abseil/debugging/stacktrace
+    - abseil/debugging/symbolize
+    - abseil/synchronization/graphcycles_internal
+    - abseil/synchronization/kernel_timeout_internal
+    - abseil/time/time
+  - abseil/time (1.20230125.3):
+    - abseil/time/internal (= 1.20230125.3)
+    - abseil/time/time (= 1.20230125.3)
+  - abseil/time/internal (1.20230125.3):
+    - abseil/time/internal/cctz (= 1.20230125.3)
+  - abseil/time/internal/cctz (1.20230125.3):
+    - abseil/time/internal/cctz/civil_time (= 1.20230125.3)
+    - abseil/time/internal/cctz/time_zone (= 1.20230125.3)
+  - abseil/time/internal/cctz/civil_time (1.20230125.3):
+    - abseil/base/config
+  - abseil/time/internal/cctz/time_zone (1.20230125.3):
+    - abseil/base/config
+    - abseil/time/internal/cctz/civil_time
+  - abseil/time/time (1.20230125.3):
+    - abseil/base/base
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/numeric/int128
+    - abseil/strings/strings
+    - abseil/time/internal/cctz/civil_time
+    - abseil/time/internal/cctz/time_zone
+    - abseil/types/optional
+  - abseil/types (1.20230125.3):
+    - abseil/types/any (= 1.20230125.3)
+    - abseil/types/bad_any_cast (= 1.20230125.3)
+    - abseil/types/bad_any_cast_impl (= 1.20230125.3)
+    - abseil/types/bad_optional_access (= 1.20230125.3)
+    - abseil/types/bad_variant_access (= 1.20230125.3)
+    - abseil/types/compare (= 1.20230125.3)
+    - abseil/types/optional (= 1.20230125.3)
+    - abseil/types/span (= 1.20230125.3)
+    - abseil/types/variant (= 1.20230125.3)
+  - abseil/types/any (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/fast_type_id
+    - abseil/meta/type_traits
+    - abseil/types/bad_any_cast
+    - abseil/utility/utility
+  - abseil/types/bad_any_cast (1.20230125.3):
+    - abseil/base/config
+    - abseil/types/bad_any_cast_impl
+  - abseil/types/bad_any_cast_impl (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/bad_optional_access (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/bad_variant_access (1.20230125.3):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/compare (1.20230125.3):
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/types/optional (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/bad_optional_access
+    - abseil/utility/utility
+  - abseil/types/span (1.20230125.3):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/meta/type_traits
+  - abseil/types/variant (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/types/bad_variant_access
+    - abseil/utility/utility
+  - abseil/utility (1.20230125.3):
+    - abseil/utility/utility (= 1.20230125.3)
+  - abseil/utility/utility (1.20230125.3):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/meta/type_traits
+  - GTXiLib (5.1.2):
+    - GTXiLib/GTXiLib (= 5.1.2)
+  - GTXiLib/GTXiLib (5.1.2):
+    - GTXiLib/GTXOOPLib
+  - GTXiLib/GTXOOPLib (5.1.2):
+    - abseil
+    - tinyxml
+  - tinyxml (2.1.0)
+
+DEPENDENCIES:
+  - GTXiLib
+
+SPEC REPOS:
+  trunk:
+    - abseil
+    - GTXiLib
+    - tinyxml
+
+SPEC CHECKSUMS:
+  abseil: ac7cc57acfcaf0793b6cd0f6d2147e3be9a2dd7d
+  GTXiLib: 5b3ab1253a2f8319e9ca01f88de4bff91b410d01
+  tinyxml: 41d718babd106ac5d39d4e98b43c835d3b9080d8
+
+PODFILE CHECKSUM: d00bd9bb36075f47077762f9eb22a09cea021458
+
+COCOAPODS: 1.12.1

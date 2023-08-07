@@ -1,0 +1,1 @@
+../../../GTXiLib/Classes/GTXXCUIElementQueryProxy.h
