@@ -6,7 +6,7 @@ enum AccessibilityLabelError {
     case containsType(UIView, [String])
     case firstWordIsNotCapitalized(UIView)
     case endsWithPeriod(UIView)
-    case duplicated(UIView)
+    case duplicated(UIView, String)
 }
 
 extension AccessibilityLabelError: AccessibilityError {
@@ -42,9 +42,9 @@ extension AccessibilityLabelError: AccessibilityError {
             UI element description: \(type.description)
             """
             
-        case let .duplicated(type):
+        case let .duplicated(type, label):
             return """
-            'accessibilityLabel' is duplicated.\n
+            'accessibilityLabel' value '\(label)' is duplicated. \n
             UI element description: \(type.description)
             """
         }

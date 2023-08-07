@@ -10,4 +10,12 @@ final class OATFinanceFuelTests: XCTestCase {
         button.frame = CGRect(x: 0, y: 0, width: 30, height: 40)
         checkAccessibility(button)
     }
+    
+    func testDuplicates() throws {
+        let view = WelcomeView(logInButtonTitle: "log in", registerButtonTitle: "log in")
+        checkAccessibility(
+            view,
+            with: .init(excluding: [.images], recursiveChecking: true)
+        )
+    }
 }

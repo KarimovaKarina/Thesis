@@ -5,7 +5,11 @@ import Combine
 internal class WelcomeViewController: UIViewController {
     var subscriptions = Set<AnyCancellable>()
     
-    private let welcomeView = WelcomeView()
+    private let welcomeView = WelcomeView(
+        logInButtonTitle: "log in",
+        registerButtonTitle: "sign up"
+    )
+    
     private let evenSubject = PassthroughSubject<WelcomeEvent, Never>()
     
     override func loadView() {

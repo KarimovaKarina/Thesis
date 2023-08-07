@@ -12,7 +12,7 @@ extension UIView {
         else { return [] }
             
         let errorsOfParentView = self.check()
-        
+       
         let errorsOfChildViews =
         subviews
             .map { $0.recursiveCheck(with: excluding) }

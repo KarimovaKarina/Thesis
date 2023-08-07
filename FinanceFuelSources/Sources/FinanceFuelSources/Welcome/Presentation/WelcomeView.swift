@@ -8,18 +8,32 @@ internal final class WelcomeView: UIView {
     }
     
     var registerDidTap: AnyPublisher<Void, Never> {
-        registerButoon.tapPublisher
+        registerButton.tapPublisher
     }
-    
+    private let logInButtonTitle: String
+    private let registerButtonTitle: String
     private let iconView = UIImageView()
-    private let logInButton = AccessibleButton(title: "LOG IN", color: .white, titleColor: .black)
-    private let registerButoon = AccessibleButton(title: "REGISTER", color: .black, titleColor: .white)
+    
+    private lazy var logInButton = AccessibleButton(
+        title: logInButtonTitle.uppercased(),
+        color: .white,
+        titleColor: .black
+    )
+    
+    private lazy var registerButton = AccessibleButton(
+        title: registerButtonTitle.uppercased(),
+        color: .black,
+        titleColor: .white
+    )
+    
     private lazy var buttonsStack = UIStackView()
     private var portraitContraints: [NSLayoutConstraint]?
     private var landscapeRightContraints: [NSLayoutConstraint]?
     private var landscapeLeftContraintss: [NSLayoutConstraint]?
     
-    init() {
+    init(logInButtonTitle: String, registerButtonTitle: String) {
+        self.logInButtonTitle = logInButtonTitle
+        self.registerButtonTitle = registerButtonTitle
         super.init(frame: .zero)
         setup()
         layout()
@@ -43,7 +57,7 @@ internal final class WelcomeView: UIView {
         buttonsStack.spacing = .edges
         buttonsStack.distribution = .fillEqually
 
-        buttonsStack.addArrangedSubviews([logInButton, registerButoon])
+        buttonsStack.addArrangedSubviews([logInButton, registerButton])
         addSubview(buttonsStack)
         
         portraitContraints = buttonsStack.constrain(.all(except: .top), to: self.safeAreaLayoutGuide, constant: .edges)

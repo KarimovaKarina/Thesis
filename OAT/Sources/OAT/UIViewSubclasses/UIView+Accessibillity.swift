@@ -18,6 +18,7 @@ extension UIView: AccessibilityCheckable {
     private func checkAccessibleElement() -> [any AccessibilityError] {
         var errors: [AccessibilityError] = []
         
+        errors += checkDuplicates()
         errors += checkAccessiblityLabel()
         errors += checkAccessibilityHint()
         errors += checkTraitsConflict()
@@ -47,18 +48,28 @@ extension UIView: AccessibilityCheckable {
 
 extension UIView {
     private func subviewLabels(for view: UIView) -> [String] {
-        let parentLabel = [accessibilityLabel]
-        let childLabels = subviews.map { subviewLabels(for: $0) }.flatMap { $0 }
+//        guard view.isAccessibilityElement, !view.subviews.isEmpty else { return [] }
+        let parentLabel = [actualAccessibilityLabel]
+        let childLabels = view.subviews.map { subviewLabels(for: $0) }.flatMap { $0 }
         return (parentLabel + childLabels).compactMap { $0 }
     }
     
-    func recursiveCheck2() -> [any AccessibilityError] {
+    func checkDuplicates() -> [any AccessibilityError] {
+        var labelsSet = Set<String>()
         let labels = subviewLabels(for: self)
-    
-        if Set(labels).count == labels.count {
-            return []
-        } else {
-            return [AccessibilityLabelError.duplicated(self)]
+        var duplicate: String?
+        labels.forEach { label in
+            if labelsSet.contains(label) {
+                duplicate = label
+            } else {
+                labelsSet.insert(label)
+            }
+            
         }
-    }
+        
+        guard let duplicate = duplicate else {
+            return []
+        }
+        return [AccessibilityLabelError.duplicated(self, duplicate)]
+        }
 }
