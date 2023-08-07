@@ -12,11 +12,8 @@ final class FinanceFuelTests: XCTestCase {
     }
 
     func testExample() throws {
-        let button = UIButton()
-        button.setTitle("button.", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.setBackgroundColor(.black, for: .normal)
-        button.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
+        let button = AccessibleButton(title: "Color.", color: .black, titleColor: .black)
+        button.frame = CGRect(x: 0, y: 0, width: 30, height: 40)
         
         let allScenes = UIApplication.shared.connectedScenes
         let scene = allScenes.first { $0.activationState == .foregroundActive }
