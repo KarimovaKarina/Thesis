@@ -4,8 +4,6 @@ import UIKit
 @testable import FinanceFuelSources
 
 final class FinanceFuelTests: XCTestCase {
-    let button = UIButton()
-
     override class func setUp() {
         super.setUp()
         let checksToBeInstalled: [GTXChecking] = GTXChecksCollection.allGTXChecks()
@@ -14,6 +12,7 @@ final class FinanceFuelTests: XCTestCase {
     }
 
     func testExample() throws {
+        let button = UIButton()
         button.setTitle("button.", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.setBackgroundColor(.black, for: .normal)
@@ -25,10 +24,5 @@ final class FinanceFuelTests: XCTestCase {
         if let windowScene = scene as? UIWindowScene {
                  windowScene.keyWindow?.addSubview(button)
         }
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-      
     }
 }
