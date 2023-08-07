@@ -13,7 +13,6 @@
 		6E39A9DE2A6C628400FB351D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E39A9DD2A6C628400FB351D /* Assets.xcassets */; };
 		6E39A9E12A6C628400FB351D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E39A9DF2A6C628400FB351D /* LaunchScreen.storyboard */; };
 		6E39AA162A6C63AF00FB351D /* RootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E39AA0C2A6C63AF00FB351D /* RootComponent.swift */; };
-		6E6C537E2A6C683300FA4A5F /* FinanceFuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C537D2A6C683300FA4A5F /* FinanceFuelTests.swift */; };
 		6E9AF4B12A7EEECC001ED729 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E9AF4B02A7EEECC001ED729 /* GoogleService-Info.plist */; };
 		6E9AF4B42A7EEF90001ED729 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6E9AF4B32A7EEF90001ED729 /* FirebaseAnalytics */; };
 		6E9AF4B62A7EEF90001ED729 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 6E9AF4B52A7EEF90001ED729 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -44,6 +43,7 @@
 		6E9AF4E82A7EEF90001ED729 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6E9AF4E72A7EEF90001ED729 /* FirebaseStorageCombine-Community */; };
 		6E9AF4EA2A7F92B3001ED729 /* LoginRegisterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9AF4E92A7F92B3001ED729 /* LoginRegisterComponent.swift */; };
 		6E9AF4EC2A7F92D6001ED729 /* WelcomeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9AF4EB2A7F92D6001ED729 /* WelcomeComponent.swift */; };
+		6E9AF4F62A80CAE9001ED729 /* FinanceFuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9AF4F52A80CAE9001ED729 /* FinanceFuelTests.swift */; };
 		6ED16FF12A6C655D00A49842 /* MoonFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED16FF02A6C655D00A49842 /* MoonFoundation */; };
 		6ED16FF32A6C655D00A49842 /* MoonPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED16FF22A6C655D00A49842 /* MoonPresentation */; };
 		6ED16FF52A6C655D00A49842 /* Moonlight in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED16FF42A6C655D00A49842 /* Moonlight */; };
@@ -51,7 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6E6C537F2A6C683300FA4A5F /* PBXContainerItemProxy */ = {
+		6E9AF4F72A80CAE9001ED729 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6E39A9C92A6C628300FB351D /* Project object */;
 			proxyType = 1;
@@ -61,18 +61,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E39A9D12A6C628300FB351D /* FinanceFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E39A9D12A6C628300FB351D /* FinanceFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = FinanceFuel.app; path = "/Users/karinakarimova/Developer/Thesis/FinanceFuel/build/Debug-iphoneos/FinanceFuel.app"; sourceTree = "<absolute>"; };
 		6E39A9D42A6C628300FB351D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E39A9D62A6C628300FB351D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6E39A9DD2A6C628400FB351D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E39A9E02A6C628400FB351D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E39A9E22A6C628400FB351D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E39AA0C2A6C63AF00FB351D /* RootComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
-		6E6C537B2A6C683300FA4A5F /* FinanceFuelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceFuelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E6C537D2A6C683300FA4A5F /* FinanceFuelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceFuelTests.swift; sourceTree = "<group>"; };
 		6E9AF4B02A7EEECC001ED729 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6E9AF4E92A7F92B3001ED729 /* LoginRegisterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterComponent.swift; sourceTree = "<group>"; };
 		6E9AF4EB2A7F92D6001ED729 /* WelcomeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeComponent.swift; sourceTree = "<group>"; };
+		6E9AF4F32A80CAE9001ED729 /* FinanceFuelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FinanceFuelTests.xctest; path = "/Users/karinakarimova/Developer/Thesis/FinanceFuel/build/Debug-iphoneos/FinanceFuelTests.xctest"; sourceTree = "<absolute>"; };
+		6E9AF4F52A80CAE9001ED729 /* FinanceFuelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceFuelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E6C53782A6C683300FA4A5F /* Frameworks */ = {
+		6E9AF4F02A80CAE9001ED729 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,30 +125,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E17B8532A6C6923003C1A34 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6E39A9C82A6C628300FB351D = {
 			isa = PBXGroup;
 			children = (
 				6E39A9D32A6C628300FB351D /* FinanceFuel */,
-				6E6C537C2A6C683300FA4A5F /* FinanceFuelTests */,
-				6E39A9D22A6C628300FB351D /* Products */,
-				6E17B8532A6C6923003C1A34 /* Frameworks */,
+				6E9AF4F42A80CAE9001ED729 /* FinanceFuelTests */,
 			);
-			sourceTree = "<group>";
-		};
-		6E39A9D22A6C628300FB351D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6E39A9D12A6C628300FB351D /* FinanceFuel.app */,
-				6E6C537B2A6C683300FA4A5F /* FinanceFuelTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		6E39A9D32A6C628300FB351D /* FinanceFuel */ = {
@@ -167,10 +149,10 @@
 			path = FinanceFuel;
 			sourceTree = "<group>";
 		};
-		6E6C537C2A6C683300FA4A5F /* FinanceFuelTests */ = {
+		6E9AF4F42A80CAE9001ED729 /* FinanceFuelTests */ = {
 			isa = PBXGroup;
 			children = (
-				6E6C537D2A6C683300FA4A5F /* FinanceFuelTests.swift */,
+				6E9AF4F52A80CAE9001ED729 /* FinanceFuelTests.swift */,
 			);
 			path = FinanceFuelTests;
 			sourceTree = "<group>";
@@ -229,24 +211,22 @@
 			productReference = 6E39A9D12A6C628300FB351D /* FinanceFuel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6E6C537A2A6C683300FA4A5F /* FinanceFuelTests */ = {
+		6E9AF4F22A80CAE9001ED729 /* FinanceFuelTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E6C53812A6C683300FA4A5F /* Build configuration list for PBXNativeTarget "FinanceFuelTests" */;
+			buildConfigurationList = 6E9AF4F92A80CAE9001ED729 /* Build configuration list for PBXNativeTarget "FinanceFuelTests" */;
 			buildPhases = (
-				6E6C53772A6C683300FA4A5F /* Sources */,
-				6E6C53782A6C683300FA4A5F /* Frameworks */,
-				6E6C53792A6C683300FA4A5F /* Resources */,
+				6E9AF4EF2A80CAE9001ED729 /* Sources */,
+				6E9AF4F02A80CAE9001ED729 /* Frameworks */,
+				6E9AF4F12A80CAE9001ED729 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6E6C53802A6C683300FA4A5F /* PBXTargetDependency */,
+				6E9AF4F82A80CAE9001ED729 /* PBXTargetDependency */,
 			);
 			name = FinanceFuelTests;
-			packageProductDependencies = (
-			);
 			productName = FinanceFuelTests;
-			productReference = 6E6C537B2A6C683300FA4A5F /* FinanceFuelTests.xctest */;
+			productReference = 6E9AF4F32A80CAE9001ED729 /* FinanceFuelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -262,8 +242,8 @@
 					6E39A9D02A6C628300FB351D = {
 						CreatedOnToolsVersion = 14.3;
 					};
-					6E6C537A2A6C683300FA4A5F = {
-						CreatedOnToolsVersion = 14.3;
+					6E9AF4F22A80CAE9001ED729 = {
+						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 6E39A9D02A6C628300FB351D;
 					};
 				};
@@ -282,12 +262,12 @@
 				6ED16FF82A6C659700A49842 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				6E9AF4B22A7EEF90001ED729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			productRefGroup = 6E39A9D22A6C628300FB351D /* Products */;
+			productRefGroup = 6E39A9C82A6C628300FB351D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6E39A9D02A6C628300FB351D /* FinanceFuel */,
-				6E6C537A2A6C683300FA4A5F /* FinanceFuelTests */,
+				6E9AF4F22A80CAE9001ED729 /* FinanceFuelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E6C53792A6C683300FA4A5F /* Resources */ = {
+		6E9AF4F12A80CAE9001ED729 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,21 +305,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E6C53772A6C683300FA4A5F /* Sources */ = {
+		6E9AF4EF2A80CAE9001ED729 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E6C537E2A6C683300FA4A5F /* FinanceFuelTests.swift in Sources */,
+				6E9AF4F62A80CAE9001ED729 /* FinanceFuelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6E6C53802A6C683300FA4A5F /* PBXTargetDependency */ = {
+		6E9AF4F82A80CAE9001ED729 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6E39A9D02A6C628300FB351D /* FinanceFuel */;
-			targetProxy = 6E6C537F2A6C683300FA4A5F /* PBXContainerItemProxy */;
+			targetProxy = 6E9AF4F72A80CAE9001ED729 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -525,7 +505,7 @@
 			};
 			name = Release;
 		};
-		6E6C53822A6C683300FA4A5F /* Debug */ = {
+		6E9AF4FA2A80CAE9001ED729 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +513,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5ZU8R4BYJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = karina.FinanceFuelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,7 +524,7 @@
 			};
 			name = Debug;
 		};
-		6E6C53832A6C683300FA4A5F /* Release */ = {
+		6E9AF4FB2A80CAE9001ED729 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -551,6 +532,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5ZU8R4BYJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = karina.FinanceFuelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -582,11 +564,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E6C53812A6C683300FA4A5F /* Build configuration list for PBXNativeTarget "FinanceFuelTests" */ = {
+		6E9AF4F92A80CAE9001ED729 /* Build configuration list for PBXNativeTarget "FinanceFuelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E6C53822A6C683300FA4A5F /* Debug */,
-				6E6C53832A6C683300FA4A5F /* Release */,
+				6E9AF4FA2A80CAE9001ED729 /* Debug */,
+				6E9AF4FB2A80CAE9001ED729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
