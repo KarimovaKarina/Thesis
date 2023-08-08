@@ -12,7 +12,7 @@ final class OATFinanceFuelTests: XCTestCase {
     }
     
     func testDuplicates() throws {
-        let view = WelcomeView(logInButtonTitle: "log in", registerButtonTitle: "log in")
+        let view = WelcomeView(logInButtonTitle: "log in1", registerButtonTitle: "log in")
         checkAccessibility(
             view,
             with: .init(excluding: [.images], recursiveChecking: true)

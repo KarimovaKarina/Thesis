@@ -1,14 +1,14 @@
 import UIKit
 
 extension UIView {
-    private var internalClassNames: [String] {
+    static var internalClassNames: [String] {
         ["UIButtonLabel"]
     }
     
     func recursiveCheck(with excluding: [ExcludedChecks]) -> [any AccessibilityError] {
         guard
             !excluding.shouldBeExcluded(self),
-            !internalClassNames.contains(Self.description())
+            !Self.internalClassNames.contains(Self.description())
         else { return [] }
             
         let errorsOfParentView = self.check()

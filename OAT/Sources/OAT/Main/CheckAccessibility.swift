@@ -26,7 +26,9 @@ func collectErrors(
         ? view.recursiveCheck(with: settings.excluding)
         : view.check()
     
-    return accessibilityErrors
+    let duplicatesErrors = UIView.checkDuplicates(for: view)
+
+    return accessibilityErrors + duplicatesErrors
 }
 
 
