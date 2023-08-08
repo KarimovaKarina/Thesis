@@ -13,7 +13,7 @@ final class AccessibilityHintErrorTests: XCTestCase {
             case .containsLabel:
                 testHintContainsLabel()
                 
-            case .doesNotEndsWithPeriod:
+            case .doesNotEndWithPeriod:
                 testHintDoesNotEndWithPeriod()
                 
             case .containsType:

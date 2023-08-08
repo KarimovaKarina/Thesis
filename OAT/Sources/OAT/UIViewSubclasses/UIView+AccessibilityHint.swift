@@ -16,7 +16,7 @@ extension UIView {
         }
         
         if !accessibilityHint.endsWithPeriod() {
-            errors.append(AccessibilityHintError.doesNotEndsWithPeriod)
+            errors.append(AccessibilityHintError.doesNotEndWithPeriod)
         }
        
         let stopWords = AccessibilityHintError.stopWords

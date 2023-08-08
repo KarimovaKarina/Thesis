@@ -6,7 +6,7 @@ extension AccessibilityHintError: CaseIterable {
             .hintIsEmpty,
             .containsLabel("Log in"),
             .containsType(["button"]),
-            .doesNotEndsWithPeriod,
+            .doesNotEndWithPeriod,
             .firstWordIsNotCapitalized
         ]
     }

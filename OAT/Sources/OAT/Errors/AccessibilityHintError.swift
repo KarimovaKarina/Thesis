@@ -4,7 +4,7 @@ enum AccessibilityHintError: Error {
     case hintIsEmpty
     case containsType([String])
     case firstWordIsNotCapitalized
-    case doesNotEndsWithPeriod
+    case doesNotEndWithPeriod
     case containsLabel(String)
 }
 
@@ -20,7 +20,7 @@ extension AccessibilityHintError: AccessibilityError {
         case .firstWordIsNotCapitalized:
             return "'accessibilityHint' should begin with a capitalized word. This helps VoiceOver read the hint with the appropriate inflection."
             
-        case .doesNotEndsWithPeriod:
+        case .doesNotEndWithPeriod:
             return "'accessibilityHint' should end with a period."
             
         case let .containsLabel(text):
