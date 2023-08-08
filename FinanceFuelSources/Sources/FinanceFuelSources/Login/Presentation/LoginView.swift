@@ -33,7 +33,10 @@ internal final class LoginView: UIView {
     }
     
     private func setup() {
-        usernameTextField.placeholder = "Username"
+        usernameTextField.accessibilityLabel = "Email address"
+        usernameTextField.keyboardType = .emailAddress
+        passwordTextField.accessibilityLabel = "Password"
+
         usernameTextField.textContentType = .emailAddress
         passwordTextField.placeholder = "Password"
         passwordTextField.textContentType = .password
