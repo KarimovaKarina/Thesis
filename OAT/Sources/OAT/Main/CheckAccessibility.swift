@@ -33,7 +33,6 @@ func collectErrors(
 
 
 extension UIView {
-    // var Bool
     func isAccessible() -> Bool {
         collectErrors(for: self, with: .default).isEmpty
     }
