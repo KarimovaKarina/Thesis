@@ -6,7 +6,7 @@ final class OATFinanceFuelTests: XCTestCase {
     func testWelcomeView() throws {
         let view = WelcomeView(
             logInButtonTitle: "Log in",
-            registerButtonTitle: "Log in"
+            registerButtonTitle: "Register"
         )
         checkAccessibility(
             view,
@@ -20,5 +20,11 @@ final class OATFinanceFuelTests: XCTestCase {
             view,
             with: .init(excluding: [.images], recursiveChecking: true)
         )
+    }
+    
+    func testTargetSize() {
+        let button = UIButton()
+        button.frame = CGRect(origin: .zero, size: .init(width: 30, height: 30))
+        checkAccessibility(button, with: .init(excluding: [.images], recursiveChecking: true))
     }
 }

@@ -22,6 +22,7 @@ extension UIView: AccessibilityCheckable {
         errors += checkAccessibilityHint()
         errors += checkTraitsConflict()
         errors += checkSubclasses()
+        errors += checkTargetSize()
         
         return errors
     }
