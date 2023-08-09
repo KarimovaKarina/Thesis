@@ -13,8 +13,7 @@ extension UIView {
             
         let errorsOfParentView = self.check()
        
-        let errorsOfChildViews =
-        subviews
+        let errorsOfChildViews = subviews
             .map { $0.recursiveCheck(with: excluding) }
             .flatMap { $0 }
 

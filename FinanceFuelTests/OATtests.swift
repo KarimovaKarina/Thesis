@@ -6,7 +6,7 @@ final class OATFinanceFuelTests: XCTestCase {
     func testWelcomeView() throws {
         let view = WelcomeView(
             logInButtonTitle: "Log in",
-            registerButtonTitle: "Register"
+            registerButtonTitle: "Log in"
         )
         checkAccessibility(
             view,
