@@ -22,9 +22,7 @@ final class OATFinanceFuelTests: XCTestCase {
         )
     }
     
-    func testTargetSize() {
-        let button = UIButton()
-        button.frame = CGRect(origin: .zero, size: .init(width: 30, height: 30))
-        checkAccessibility(button)
+    func testButton() {
+        checkAccessibility(accessibleButton)
     }
 }
